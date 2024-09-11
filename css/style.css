@@ -367,6 +367,15 @@ header{
 .img1{
   width: 50%;
 }
+.max-width-700 {
+  max-width: 700px;
+  margin: 0 auto; 
+  color: rgb(104, 14, 14);
+  margin-bottom: 15px;/* Center-align the heading horizontally */
+}
+.event-logo{
+  
+}
 
 .navbar li a, .navbar {
  font-family: Poppins;
@@ -494,7 +503,7 @@ hr.style3 {
 }
 /* General styles for the speakers section */
 #speakers {
-  padding: 40px 0; /* Increased padding for better spacing */
+  /* padding: 40px 0; Increased padding for better spacing */
   background: white;
 }
 

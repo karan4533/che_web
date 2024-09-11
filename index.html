@@ -51,7 +51,7 @@
   </script>
 
   <div id="main">
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div> -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-trans sticky-top" style="margin-top: 7px;">
         <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -59,7 +59,7 @@
           <a class="navbar-brand" href="#">
             <img class="img11" src="assets/brown_logo.png" alt="Left Logo">
           </a>
-          
+  
           <!-- Centered Navigation Links -->
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav">
@@ -73,19 +73,19 @@
                 <a class="nav-link" href="#speakers">Speakers</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#ourteam">Team</a>
-                </li>
+                <a class="nav-link" href="#ourteam">Team</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#sponsors">Sponsors</a>
               </li>
             </ul>
           </div>
-    
+  
           <!-- Right Logo -->
           <a class="navbar-brand" href="#">
             <img class="img1" src="assets/Picsart.png" alt="Right Logo">
           </a>
-    
+  
           <!-- Mobile toggle button for navigation -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -93,79 +93,87 @@
         </div>
       </nav>
     </header>
-    
-      <div class="container-fluid">
-        <div class="row">
-          <div class="main-body text-center pt-3">
-            <div class="maintitle">
-              <img src="assets/event-logo.png">
-            </div>
-            <div class="dateandplace">
-              <h1 class="fs-32 text-white fw-500">
-                19th <span class="text-base-color">December</span> to 22nd <span class="text-base-color">December</span> 2024
-              </h1>
-              
-              <h1 class="fs-42 text-white  fw-600">Vellore Institute of <span class="text-base-color">Technology</span> ,Amaravati</h1>
-            </div>
-            
-            <div class="countdown-timer">
-              <div class="days">
-                <span class="value" id="days">00</span><br>
-                <span class="label">DAYS</span>
-              </div>
-              <span class="colon">:</span>
-              <div class="hours">
-                <span class="value" id="hours">00</span><br>
-                <span class="label">HOURS</span>
-              </div>
-              <span class="colon">:</span>
-              <div class="minutes">
-                <span class="value" id="minutes">00</span><br>
-                <span class="label">MINS</span>
-              </div>
-              <span class="colon">:</span>
-              <div class="seconds">
-                <span class="value" id="seconds">00</span><br>
-                <span class="label">SEC</span>
-              </div>
-            </div>
-            
-            <script>
-              // Set the target date and time for the countdown (19th December 2024 at 10:00 AM)
-              const targetDate = new Date("December 19, 2024 10:00:00").getTime();
-            
-              // Function to update the countdown timer
-              function updateCountdown() {
-                const now = new Date().getTime();
-                const timeDifference = targetDate - now;
-            
-                // Calculate days, hours, minutes, and seconds
-                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-            
-                // Update the HTML elements with the calculated values
-                document.getElementById("days").innerText = days;
-                document.getElementById("hours").innerText = hours;
-                document.getElementById("minutes").innerText = minutes;
-                document.getElementById("seconds").innerText = seconds;
-            
-                // Stop the countdown when the target date is reached
-                if (timeDifference < 0) {
-                  clearInterval(timerInterval);
-                  document.querySelector(".countdown-timer").innerHTML = "<h2>Event Started</h2>";
-                }
-              }
-            
-              // Update the countdown every second
-              const timerInterval = setInterval(updateCountdown, 1000);
-            </script>
-            
+  
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="main-body text-center pt-3">
+          
+          <!-- New Heading -->
+          <p class="fs-35 fw-500 max-width-700 ">International Conference on Next Generation Sustainable Materials for Water and Energy - 2024</p>
+          
+          <div class="maintitle">
+            <img class="event-logo" style="width: 30%; margin-bottom:15px;" src="assets/event-logo.png" alt="Event Logo">
           </div>
+  
+          <div class="dateandplace">
+            <h1 class="fs-32 text-white fw-500">
+              19th <span class="text-base-color">December</span> to 22nd <span class="text-base-color">December</span> 2024
+            </h1>
+            
+            <h1 class="fs-42 text-white fw-600">Vellore Institute of <span class="text-base-color">Technology</span> , Amaravati</h1>
+          </div>
+  
+          <!-- Countdown Timer -->
+          <div class="countdown-timer">
+            <div class="days">
+              <span class="value" id="days">00</span><br>
+              <span class="label">DAYS</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="hours">
+              <span class="value" id="hours">00</span><br>
+              <span class="label">HOURS</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="minutes">
+              <span class="value" id="minutes">00</span><br>
+              <span class="label">MINS</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="seconds">
+              <span class="value" id="seconds">00</span><br>
+              <span class="label">SEC</span>
+            </div>
+          </div>
+  
+          <script>
+            // Set the target date and time for the countdown (19th December 2024 at 10:00 AM)
+            const targetDate = new Date("December 19, 2024 10:00:00").getTime();
+  
+            // Function to update the countdown timer
+            function updateCountdown() {
+              const now = new Date().getTime();
+              const timeDifference = targetDate - now;
+  
+              // Calculate days, hours, minutes, and seconds
+              const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+  
+              // Update the HTML elements with the calculated values
+              document.getElementById("days").innerText = days;
+              document.getElementById("hours").innerText = hours;
+              document.getElementById("minutes").innerText = minutes;
+              document.getElementById("seconds").innerText = seconds;
+  
+              // Stop the countdown when the target date is reached
+              if (timeDifference < 0) {
+                clearInterval(timerInterval);
+                document.querySelector(".countdown-timer").innerHTML = "<h2>Event Started</h2>";
+              }
+            }
+  
+            // Update the countdown every second
+            const timerInterval = setInterval(updateCountdown, 1000);
+          </script>
+  
         </div>
       </div>
     </div>
+  </div>
+  
 <div id="section2">
   <h1 class="text-black section2title ff-mont pt-2 fs-40 fw-600">Department of <span class="text-base-color"> Chemistry</span></h1>
   <div class="about-us mt-4" data-aos="fade-up" data-aos-duration="1000" >
@@ -775,7 +783,7 @@
 
 
 
-<div id="sponsors" >
+<!-- <div id="sponsors" >
   <h1 class="text-white section2title pt-2 fs-40 fw-600 m-3 ff-mont text-center" data-aos="fade-up">OUR<span class="text-base-color "> SPONSORS</span></h1>
   <div class="container-fluid">
     <div class="row d-flex justify-content-center">
@@ -806,7 +814,7 @@
          </div>
        </div>
      </div>
-   </div>
+   </div> -->
  </div>
 
 </div>
@@ -850,8 +858,8 @@
       <div class="contactcontent  text-left">
         <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
         <div class="contactcontenttext text-left">
-        <p class="fs-18 text-white fw-400 contactnumber">+918818866224</p>
-        <p class="fs-18 text-white fw-400 contactmail">tedxmitsg@gmail.com</p>
+        <p class="fs-18 text-white fw-400 contactnumber">+919876543210</p>
+        <p class="fs-18 text-white fw-400 contactmail">vitap@gmail.com</p>
       </div>
       </div>
     </div>
@@ -868,15 +876,15 @@
    
     <div class="col-md-3">
       <div class="footerlogo">
-        <img src="assets/logo_white.png">
+        <img src="assets/white_logo.png">
       </div>
     </div>
   </div>
   </div>
 </div>
 <footer class="text-center footer">
-  <p class="text-white fw-100 fs-13 m-0"> &#169; 2020 Madhav Institute of Technology and Science,Gwalior</p>
-  <p class="text-white fw-100 fs-13 m-0 ">Designed and Developed by <a href="https://pranshuls12.github.io/pranshulsaxena.github.io/" target="_blank"><b>Pranshul Saxena</b></a></p>
+  <p class="text-white fw-100 fs-13 m-0"> &#169; Vellore Institue of Technology,Amaravati</p>
+  <p class="text-white fw-100 fs-13 m-0 ">Designed and Developed by <a href="index.html" target="_blank"><b>Our Team</b></a></p>
 </footer>
 
 
