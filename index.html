@@ -1,0 +1,857 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+  <!-- Keywords and Tags -->
+  <meta name="description" content="TEDxMITSG, x = independently organised TED event. Moving The Margins. 25 January, at MITS,Gwalior.">
+  <meta name="keywords" content="TEDx, MITSG, MITS Gwalior, Gwalior,Madhav Institute of Technology and Science , event, talks">
+  <meta name="robots" content="noindex" />
+  <!-- Social media tags -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="TEDxMITSG">
+  <meta property="og:description" content="Moving The Margins ,25 January, at MITS,Gwalior.">
+  <meta property="og:image" content="https://tedxmitsg.com/assets/light-social.png">
+  <meta property="og:url" content="https://tedxmitsg.com">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TMitsg">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152687064-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152687064-2');
+</script>
+
+
+
+
+  <title>Event</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body >
+
+  <div class="se-pre-con">
+    <div class="drawing" id="loading">
+      <div class="loading-dot"></div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+
+  <div id="main">
+    <div id="particles-js"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-trans sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <!-- Left Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/brown_logo.png" alt="Left Logo">
+          </a>
+          
+          <!-- Centered Navigation Links -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers">Speakers</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#ourteam">Team</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Right Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/brown_logo.png" alt="Right Logo">
+          </a>
+    
+          <!-- Mobile toggle button for navigation -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="main-body text-center pt-3">
+            <div class="maintitle">
+              <img src="assets/MAIN4.png">
+            </div>
+            <div class="dateandplace">
+              <h1 class="fs-32 text-white fw-500">
+                19th <span class="text-base-color">December</span> to 22nd <span class="text-base-color">December</span> 2024
+              </h1>
+              
+              <h1 class="fs-42 text-white  fw-600">Vellore Institute of <span class="text-base-color">Technology</span> ,Amaravati</h1>
+            </div>
+            
+            <div class="countdown-timer">
+              <div class="days">
+                <span class="value" id="days">00</span><br>
+                <span class="label">DAYS</span>
+              </div>
+              <span class="colon">:</span>
+              <div class="hours">
+                <span class="value" id="hours">00</span><br>
+                <span class="label">HOURS</span>
+              </div>
+              <span class="colon">:</span>
+              <div class="minutes">
+                <span class="value" id="minutes">00</span><br>
+                <span class="label">MINS</span>
+              </div>
+              <span class="colon">:</span>
+              <div class="seconds">
+                <span class="value" id="seconds">00</span><br>
+                <span class="label">SEC</span>
+              </div>
+            </div>
+            
+            <script>
+              // Set the target date and time for the countdown (19th December 2024 at 10:00 AM)
+              const targetDate = new Date("December 19, 2024 10:00:00").getTime();
+            
+              // Function to update the countdown timer
+              function updateCountdown() {
+                const now = new Date().getTime();
+                const timeDifference = targetDate - now;
+            
+                // Calculate days, hours, minutes, and seconds
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            
+                // Update the HTML elements with the calculated values
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+            
+                // Stop the countdown when the target date is reached
+                if (timeDifference < 0) {
+                  clearInterval(timerInterval);
+                  document.querySelector(".countdown-timer").innerHTML = "<h2>Event Started</h2>";
+                }
+              }
+            
+              // Update the countdown every second
+              const timerInterval = setInterval(updateCountdown, 1000);
+            </script>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<div id="section2">
+  <h1 class="text-black section2title ff-mont pt-2 fs-40 fw-600">Department of <span class="text-base-color"> Chemistry</span></h1>
+  <div class="about-us mt-4" data-aos="fade-up" data-aos-duration="1000" >
+    <div class="container-fluid">
+      <div class="about-main">
+          <!-- <div class="row">
+          <div class="col-md-6">
+            <div style="position:relative;height:0;padding-bottom:56.25%"><video src="video/1.mp4" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" controls autoplay type="video/mp4" id="vid"></video>
+            </div>
+          </div>
+          <div class="col-md-6">
+          <div class="about-ted">
+            <p class="text-black fs-14 fw-400">
+              Some lives become stories that are told and retold with a new flair every time. In moving the margins, we look at lives that have not just thought, out-of-the- box, but have redefined the very process of thinking.
+              We are exhibiting Moving the Margins through ground breaking contributions of those illustrious personalities that have changed the very fabric of contemporary society and posits to change the shape of human civilization.<br>
+            We announce with TEDxMITSG that margins can no longer be marginalised.</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-md-12"> <!-- Changed to occupy full width -->
+          <div class="about-department">
+            <h1 class="text-black fs-20 fw-500">
+              About <span class="cl-red fw-800 ">Department of Chemistry</span>
+            </h1>
+            <p class="text-black fs-14 fw-400">
+              The Department of Chemistry offers an M.Sc. Chemistry program at VIT-AP University. This program provides ample opportunities for students to choose courses from a broad spectrum of cutting-edge areas in addition to fundamentals of organic, inorganic, physical, analytical, and computational chemistry. Sessions on improving technical skills, scientific writing, oral presentations, and research expertise have been incorporated into the curriculum.
+            </p>
+            <p class="text-black fs-14 fw-400">
+              Furthermore, the students will have the scope to pursue their post-graduation thesis work at various national and international institutions and industries. Overall, by integrating the in-depth core and elective courses, and research work, instructed and guided by highly qualified and well-experienced faculty members, students will gain the foundation and skill to advance their careers in higher studies and industry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="container mt-4">
+          <!-- Programs Offered Section -->
+          <div class="programs-offered mb-5">
+            <h1 class="text-black fs-20 fw-500">Programs Offered</h1>
+            <ul class="list-unstyled">
+              <li class="text-black fs-14 fw-400">• M.Sc. Chemistry in collaboration with Mitsui Kinzoku Components India Pvt. Ltd. (MKCI)
+                <ul>
+                  <li>M.Sc. Chemistry</li>
+                  <li>M.Sc. Chemistry (Specialization in Pharmaceutical Chemistry)</li>
+                  <li>M.Sc. Chemistry (Specialization in Analytical Chemistry)</li>
+                </ul>
+              </li>
+              <li class="text-black fs-14 fw-400">• Ph. D. Chemistry</li>
+              <li class="text-black fs-14 fw-400">• Internship, placement and higher studies opportunities for the M.Sc. students in reputed companies, national and international universities.</li>
+              <li class="text-black fs-14 fw-400">• 100% students from the previous academic years have secured internships and placements in various renowned industrial and academic organizations such as Zifo, Aurobindo Pharma, Cipla, Mitsui Kinzoku Components India Pvt. Ltd., Microlabs Pvt. Ltd., Tina Life Science (through RSC), Cresen Solutions, LatentView Analytics, IIT, IISc, NIT, IICT, JNCASR, etc.</li>
+            </ul>
+          </div>
+        
+          <!-- Scholarships Section -->
+          <div class="scholarships mb-5">
+            <h1 class="text-black fs-20 fw-500">Scholarships</h1>
+            <p class="text-black fs-14 fw-400">100% scholarship opportunity for M.Sc. Chemistry students</p>
+            <ul class="list-unstyled">
+              <li class="text-black fs-14 fw-400"><strong>G.V. PG Merit Scholarship:</strong> 100% Full Merit scholarship to a candidate who has secured CGPA of 9.0 or 90% and above (whichever is applicable) in the 6 Semesters/ Three Years of the qualifying UG examination.</li>
+              <li class="text-black fs-14 fw-400"><strong>Rajeswari PG Merit Scholarship:</strong> 50% scholarship to a candidate who has secured CGPA of 8.0 or 80% and above in the qualifying UG program and an additional 25% for a girl candidate making it a 75% scholarship.</li>
+            </ul>
+          </div>
+        
+          <!-- Areas of Innovation and Research Section -->
+          <div class="research-areas mb-5">
+            <h1 class="text-black fs-20 fw-500" style="margin-bottom: 13px;">Areas of Innovation and Research in the Department of Chemistry</h1>
+            <ul class="list-unstyled row">
+              <li class="col-md-4 mb-3 fs-15">• Nanomaterials</li>
+              <li class="col-md-4 mb-3 fs-15">• Organic Chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Energy materials</li>
+              <li class="col-md-4 mb-3 fs-15">• Catalysis</li>
+              <li class="col-md-4 mb-3 fs-15">• Environmental Chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Inorganic Chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Physical Chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Biovaccination</li>
+              <li class="col-md-4 mb-3 fs-15">• Supramolecular Chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Computational chemistry</li>
+              <li class="col-md-4 mb-3 fs-15">• Neurobiology</li>
+            </ul>
+          </div>
+          
+        
+          <!-- Research at VIT-AP Section -->
+          <div class="research-at-vit-ap mb-5">
+            <h1 class="text-black fs-20 fw-500">Research at VIT-AP</h1>
+        
+            <!-- Fellowship Table -->
+            <table class="table table-bordered table-striped">
+              <thead style="background-color: #690101; color:white;">
+                <tr>
+                  <th>VIT Fellowship for PhD students</th>
+                  <th>GATE Qualified (Above 60% in PG)</th>
+                  <th>Others</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>First Year</td>
+                  <td>Rs. 31,000/Month</td>
+                  <td>Rs. 25,000/Month</td>
+                </tr>
+                <tr>
+                  <td>Second and Third Year</td>
+                  <td>Rs. 35,000/Month</td>
+                  <td>Rs. 31,000/Month</td>
+                </tr>
+              </tbody>
+            </table>
+        
+            <ul class="list-unstyled">
+              <li class="text-black fs-14 fw-400">• Raman Research Award up to 1 lakh for publications exclusively for research scholars</li>
+              <li class="text-black fs-14 fw-400">• Contingency amount of Rs. 10,000 per year for all Scholars</li>
+              <li class="text-black fs-14 fw-400">• Open access research publication support for Q1 and Q2 Journals</li>
+              <li class="text-black fs-14 fw-400">• Financial support for attending conferences/workshop/training etc.</li>
+              <li class="text-black fs-14 fw-400">• Six external funded projects (More than Rs. 1.8 Cr)</li>
+              <li class="text-black fs-14 fw-400">• Skill development-oriented curriculum</li>
+              <li class="text-black fs-14 fw-400">• Global collaborations with various reputed academic, research institutes and industries</li>
+              <li class="text-black fs-14 fw-400">• More than 20 projects funded by the university to the SAS faculties and students</li>
+              <li class="text-black fs-14 fw-400">• The department has more than 20 faculties, all with Ph.D.s and Postdocs from top-tier global universities</li>
+              <li class="text-black fs-14 fw-400">• Diverse mix of national and international students</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="speakers">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="tedxspeakers-title text-center m-3">
+       <h1 class="text-black section2title p-3 fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">SPEAKERS</span></h1>
+       <h2 class="text-black section2title p-3 fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">Day-01</span></h2>
+       <h3 class="text-black section2title p-3 fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">Water & Energy</span></h3>
+     </div>
+   </div>
+ </div>
+ <div class="tedxspeaker">
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="speakers-imgbox">
+            <img src="assets/Dr Domen.jpg">
+          </div>
+          <div class="speakers-txtbox">
+            <h1 class="fs-25 fw-900">prof Kazunari Domen </h1>
+            <p class="fs-18 fw-500">University of Tokyo, and Sinshu University,  Japan</p>
+            <a href="https://www.u-tokyo.ac.jp/focus/en/people/people000527.html"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF prof Kazunari Domen</p></a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+       <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="speakers-imgbox">
+              <img src="assets/ramli.jpg">
+            </div>
+            <div class="speakers-txtbox">
+              <h1 class="fs-25 fw-900">Prof Ch Subramanyam</h1>
+              <p class="fs-18 fw-500">IIT Hyderabad</p>
+              <a href="https://scholar.google.co.in/citations?user=5bUWaokAAAAJ&hl=en"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof Ch Subramanyam</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="speakers-imgbox">
+            <img src="assets/piyushmishra.jpg">
+          </div>
+          <div class="speakers-txtbox">
+            <h1 class="fs-25 fw-900">Prof Byong-Hun Jeon</h1>
+            <p class="fs-18 fw-500">Hanyang University <br>South Korea</p>
+            <a href="https://scholar.google.co.in/citations?hl=en&user=iLAWDREAAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof Byong-Hun Jeon</p></a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="speakers-imgbox">
+              <img src="assets/as.jpg">
+            </div>
+            <div class="speakers-txtbox">
+              <h1 class="fs-25 fw-900">Prof S Ramesh L Gardas</h1>
+              <p class="fs-18 fw-500">IIT Madras</p>
+              <a href="https://scholar.google.co.in/citations?hl=en&user=XMS4hv0AAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof S Ramesh L Gardas</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="speakers">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="tedxspeakers-title text-center m-3">
+              <h2 class="text-black section2title p-3 fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">Day-02</span></h2>
+             <h3 class="text-black section2title p-3 fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">Water</span></h3>
+           </div>
+         </div>
+       </div>
+       <div class="tedxspeaker">
+         <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="speakers-imgbox">
+                  <img src="assets/rajgopal.jpg">
+                </div>
+                <div class="speakers-txtbox">
+                  <h1 class="fs-25 fw-900">Prof Giehyeon Lee </h1>
+                  <p class="fs-18 fw-500">Yonsei University, South Korea</p>
+                  <a href="http://geochem.yonsei.ac.kr/index.php?hCode=BOARD&bo_idx=5"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof Giehyeon Lee</p></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+             <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="speakers-imgbox">
+                    <img src="assets/ramli.jpg">
+                  </div>
+                  <div class="speakers-txtbox">
+                    <h1 class="fs-25 fw-900">Prof S Meenakshi</h1>
+                    <p class="fs-18 fw-500">The Gandhigram Rural Institute, India</p>
+                    <a href="https://scholar.google.co.in/citations?hl=en&user=v9gc7zwAAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof S Meenakshi</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="speakers-imgbox">
+                  <img src="assets/piyushmishra.jpg">
+                </div>
+                <div class="speakers-txtbox">
+                  <h1 class="fs-25 fw-900">Prof V Aravindan</h1>
+                  <p class="fs-18 fw-500">IISER Tripathy</p>
+                  <a href="https://scholar.google.co.in/citations?hl=en&user=k1n8uxUAAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof V Aravindan</p></a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-3">
+                <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="speakers-imgbox">
+                    <img src="assets/as.jpg">
+                  </div>
+                  <div class="speakers-txtbox">
+                    <h1 class="fs-25 fw-900">Prof N Selvaraju</h1>
+                    <p class="fs-18 fw-500">IIT Guwahati</p>
+                    <a href="https://scholar.google.co.in/citations?hl=en&user=cICz1ukAAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof N Selvaraju</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+                <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="speakers-imgbox">
+                    <img src="assets/as.jpg">
+                  </div>
+                  <div class="speakers-txtbox">
+                    <h1 class="fs-25 fw-900">Prof N Selvaraju</h1>
+                    <p class="fs-18 fw-500">IIT Guwahati</p>
+                    <a href="https://scholar.google.co.in/citations?hl=en&user=cICz1ukAAAAJ"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Prof N Selvaraju</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+      
+<div id="section3">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="pastevents pt-3" data-aos="fade-up" data-aos-duration="1000" >
+        <h1 class="text-white fs-40 fw-900"><span class="cl-red fw-800 font-family-alt">TEDx</span>MITSG 2017</h1>
+        <h2 class="text-white fs-25 fw-900">Maneuvering<span class="cl-red fw-800 font-family-alt">Ingenuity</span></h2>
+        <div class="pasteventtext">
+        <p class="text-justify text-white fs-16 fw-500">We live in a world where ideas float even in thin air and with the fast emerging wireless and infrared technologies- they literally do.TED Talks are powerful and capable of influencing masses. We know that necessity is the mother of all inventions, but ideas are the father and TED talks create an environment of looking into our minds producing ideas that can benefit us, our life style and the lives of those around us.Here, at TEDx MITSG, as engineering students who yearn to design and build a better and improved world, our theme "Maneuvering Ingenuity" is the best way to create a culture that fosters innovation and encourages us to take small steps which empowers our future world.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row text-center pt-1">
+      <div class="carouseltedx pt-1" data-aos="fade-down" data-aos-duration="1000">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/rLEzL8nxMPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/wI2149ys1WA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zBPsa91aYGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KP1GSiYnbJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0fFI44L0Cgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GsEseMD6KhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/YnxLwSsFu1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/lg_JwZRsSeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ourteam">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="tedxspeakers-title text-center">
+       <h1 class="text-black section2title  fs-40 fw-600 ff-mont"  data-aos="fade-up"><span class="text-base-color ">OUR TEAM</span></h1>
+     </div>
+   </div>
+ </div>
+  <div class="ourteamlist">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="ourteamtitle w-100 text-center m-3">
+        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">ORGANISER</div>
+      </div>
+    </div>
+    <div class="orgnisers">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_pradyumn.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Pradyumn Choubey</h1>
+            <p class="fs-14 fw-500">Organiser</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000"> 
+          <div class="teamprofileimg">
+             <img src="assets/vikramsir.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Vikram Rajput</h1>
+            <p class="fs-14 fw-500">Organiser</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="ourteamtitle w-100 text-center m-3">
+        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">CURATOR</div>
+      </div>
+    </div>
+    <div class="orgnisers">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_akash.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Aakash R Thorat</h1>
+            <p class="fs-14 fw-500">Curation</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000"> 
+          <div class="teamprofileimg">
+             <img src="assets/team_praveen.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Praveen Kaurwar</h1>
+            <p class="fs-14 fw-500">Curation</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row ">
+      <div class="ourteamtitle w-100 text-center m-3">
+        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">CORE TEAM</div>
+      </div>
+    </div>
+    <div class="coreteam">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_bhawna.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Bhawna Shrey</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_suman.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Suman Yadav</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_pranshul.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Pranshul Saxena</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_harsh.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Harsh Arjeria</h1> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_aman.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Aman Chak</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_abhinav.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Abhinav Tomar</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_arpita.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Arpita Singh</h1> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_shruti.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Shruti Gupta</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_sparsh.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Sparsh Ahmed</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="teamprofileimg">
+             <img src="assets/team_ashish.png"> 
+          </div>
+          <div class="teamprofiletxt">
+            <h1 class="fs-16 fw-900">Ashish Parashar</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sponsors" >
+  <h1 class="text-white section2title pt-2 fs-40 fw-600 m-3 ff-mont text-center" data-aos="fade-up">OUR<span class="text-base-color "> SPONSORS</span></h1>
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+         <div class="col-md-2 m-3 text-center" data-aos="fade-up" data-aos-duration="500">
+          <div class="sponsorsousimg">
+          <img src="assets/time.png">
+      </div>
+      </div>
+    </div>
+  </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="sponsors-button" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+              <div class="row">
+                <div class="col-md-6 text-right">
+                  <div class="whysponsorsousbtn">
+             <button id="myBtn" class="sponsorsous"  >WHY TO SPONSOR</button>
+           </div>
+         </div>
+           <div class="col-md-6 text-left">
+            <div class="sponsorsouslinkbtn">
+             <a href="mailto:tedxmitsg@gmail.com?Subject=Sponsorship%20Request" class="sponsorsouslink">SPONSOR US</a>
+           </div>
+           </div>
+           </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <h1 class="text-white fs-27 fw-600 w-100 text-center m-2">Why Sponsor Us</h1>
+      <span class="close">&times;</span>
+    </div>
+    <div class="sponsorscontent">
+      <div class="row">
+        <ul class="sponsorscontentlist">
+         <li> A company will have the opportunity to associate with TEDx MITSG.</li>
+         <li>Placement of the company logo and advertisements on monitors before and after the show, as well as during breaks.</li>
+         <li>Opportunity to place promotion material in the attendee gift bags.</li>
+         <li>Opportunity to place promotion material in the Speaker Packets.</li>
+         <li>Large logo placed on our website with long description of the company and link to your company’s website.</li>
+         <li> Thanks to the explicitly named sponsor on stage by the masters-of- ceremonies at the end of the event.</li>
+         <li>Mention in media/press release</li>
+         <li>Opportunity to set up exhibit space outside the main venue space.</li>
+         <li>Logo appears on post-roll credits (for a maximum of 3 seconds) at the end of each TEDx video watched by millions of viewers from all over the world.</li>
+         <li>Logo appears on pre-roll credits (for a maximum of 3 seconds) at the start of each TEDx video, also viewed by an enormous number, globally.</li>
+         <li>Option to set up a booth for an innovative product demonstration and/or sampling (no selling) of your company’s product.</li>
+       </ul>
+     </div>
+     <p class="fs-16 text-white">-- Any special request for specific publicity will be considered and fulfilled as long as it is not in conflict with the motive of the event and principles of MITS Gwalior--</p>
+   </div>
+
+ </div>
+</div>
+
+<div id="contactus">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+       <div class="col-md-3">
+      <div class="buyticketsbottom">
+            <a href="https://www.townscript.com/v1/e/tedxmitsg-242044/booking" class="btnticketsbottom">BUY TICKETS</a>
+          </div>
+    </div>
+      <div class="col-md-3">
+      <div class="contactcontent  text-left">
+        <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
+        <div class="contactcontenttext text-left">
+        <p class="fs-18 text-white fw-400 contactnumber">+918818866224</p>
+        <p class="fs-18 text-white fw-400 contactmail">tedxmitsg@gmail.com</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="socialmedia  text-left">
+        <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
+        <div class="socialmediaico">
+        <a href="https://www.facebook.com/TEDxMITSG"  target="_blank"><img src="assets/facebook.png"></a>
+        <a href="https://instagram.com/tedxmitsg"  target="_blank"><img src="assets/instagram.png"></a>
+        <a href="https://twitter.com/TMitsg"  target="_blank"><img src="assets/twitter.png"></a>
+      </div>
+      </div>
+    </div>
+   
+    <div class="col-md-3">
+      <div class="footerlogo">
+        <img src="assets/logo_white.png">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<footer class="text-center footer">
+  <p class="text-white fw-100 fs-13 m-0"> &#169; 2020 Madhav Institute of Technology and Science,Gwalior</p>
+  <p class="text-white fw-100 fs-13 m-0 ">Designed and Developed by <a href="https://pranshuls12.github.io/pranshulsaxena.github.io/" target="_blank"><b>Pranshul Saxena</b></a></p>
+</footer>
+
+
+</body>
+
+
+
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+
+</script>
+<script type="text/javascript">var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
+<script language="javascript" type="text/javascript">
+  $(window).on('load', function(){ $(".se-pre-con").fadeOut("slow");;});
+</script>
+
+<script src="js/particles.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/countdown1.js"></script>
+
+
+</html>
