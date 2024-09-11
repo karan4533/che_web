@@ -355,11 +355,20 @@ header{
   padding-top: 4px;
 }
 .navbar-brand{
- height: 77px;
+ /* height: 77px; */
   width: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.navbar-brand img{
+.navbar-brand .img11{
   width: 100%;
+}
+.img1{
+  width: 50%;
+}
+.img-event-logo{
+  width: 10%;
 }
 .navbar li a, .navbar {
  font-family: Poppins;
