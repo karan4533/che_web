@@ -576,7 +576,7 @@ hr.style3 {
 /* Image styling */
 .speakers-imgbox img {
   width: 100%;
-  height: 100%;
+  height: 125%;
   object-fit: cover; /* Cover the area while maintaining aspect ratio */
 }
 
