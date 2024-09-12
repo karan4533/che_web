@@ -747,6 +747,14 @@ width: 100%;
 }
 .socialmedia img{
   margin-left: 10px;
+  
+}
+.linkedinred img{
+  width:32px;
+  height:32px;
+  margin-left: 10px;
+  margin-right: 24%;
+  top:0;
 }
 .shape{
   position: absolute;
