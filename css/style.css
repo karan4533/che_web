@@ -760,7 +760,7 @@ color: white;
     background-position-y: center;
   }
 .contactcontent, .socialmedia{
-    margin-right: 24%;
+    margin-right: 20%;
   }
 #contactus{
   padding: 20px;
@@ -770,10 +770,16 @@ color: white;
   background: black;
 }
 .footerlogo{
-  width: 100%;
+  width: 50%;
 }
 .footerlogo img{
 width: 100%;
+}
+.footerlogo1{
+width:50%;
+}
+.picsart-logo img {
+  width: 50%;
 }
 .socialmedia img{
   margin-left: 10px;
@@ -826,6 +832,19 @@ footer a:hover{
     font-weight: 600;
     position:relative;   
 }
+.btnticketsbottom1  {
+  background: #e62b1e;
+    padding: 10px 30px 10px 30px;
+    border-radius: 28px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    position:relative;   
+}
+.btnticketsbottom1:hover{
+  color: black;
+  text-decoration: none;
+}
 .btnticketsbottom:hover{
   color: black;
   text-decoration: none;
@@ -833,6 +852,10 @@ footer a:hover{
 .buyticketsbottom{
   text-align: left;
     padding-top: 10%;
+    width: 100%;
+}
+.buyticketsbottom1{
+  text-align: center;
     width: 100%;
 }
 .pasteventtext{
