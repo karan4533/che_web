@@ -438,8 +438,12 @@ header {
 @media only screen and (max-width: 768px) {
   .navbar-brand .img1 {
     height: 70px;
+    
     width: auto;
     display: none;
+  }
+    #navbar-nav {
+    padding: 10px;-top: 10px;
   }
 
   .img11 {
@@ -448,6 +452,11 @@ header {
     filter: brightness(0) invert(1);
     /* height: 10px; */
   }
+  element.style {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
 }
 .max-width-700 {
   max-width: 900px;
@@ -1035,6 +1044,7 @@ footer a:hover {
     height: auto;
     width: 80px;
   }
+  
 }
 
 @media only screen and (max-width: 768px) {
