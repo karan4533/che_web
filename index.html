@@ -75,7 +75,7 @@
       <!-- Your existing HTML content -->
       <header>
         <nav
-          class="navbar navbar-expand-lg py-3 navbar-dark bg-trans  sticky-top"
+          class="navbar navbar-expand-lg py-3 navbar-dark bg-trans sticky-top"
           style="margin-top: 0px"
         >
           <div
@@ -118,7 +118,7 @@
             </div>
 
             <!-- Right Logo -->
-            <a class="navbar-brand " href="#">
+            <a class="navbar-brand" href="#">
               <img class="img1" src="assets/Picsart.png" alt="Right Logo" />
             </a>
 
@@ -1434,6 +1434,8 @@
         </div>
       </div>
     </div>
+    <button id="goToTopBtn" title="Go to top">↑</button>
+
 
     <div id="contactus">
       <div class="container-fluid">
@@ -1509,6 +1511,7 @@
         <a href="index.html" target="_blank"><b>Our Team</b></a>
       </p>
     </footer>
+
   </body>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -1556,3 +1559,23 @@
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/countdown1.js"></script>
 </html>
+
+<script src="js/main.js"></script>
+
+<button id="goToTopBtn" title="Go to top">↑</button>
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("goToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("goToTopBtn").style.display = "none";
+    }
+  }
+
+  document.getElementById("goToTopBtn").onclick = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
