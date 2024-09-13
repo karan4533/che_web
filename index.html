@@ -48,41 +48,49 @@
   </script>
 
   <div id="main">
+    <video autoplay muted loop class="background-video">
+      <source src="../assets/intro_c60395eb0f.mp4" type="video/mp4">
+    </video>
     
     <!-- <div id="particles-js"></div> -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-trans sticky-top" style="margin-top: 0px;">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-          <!-- Left Logo -->
-          <a class="navbar-brand" href="#">
-            <img class="img11" src="assets/brown_logo.png" alt="Left Logo">
-          </a>
-  
-          <!-- Centered Navigation Links -->
-          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item"> <!-- New element for Conference -->
-                <a class="nav-link" href="#conference">Conference</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section">Department</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#speakers">Speakers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#ourteam">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sponsors">Sponsors</a>
-              </li>
-              
-            </ul>
-            
-          </div>
+    
+  <!-- Your existing HTML content -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-trans sticky-top" style="margin-top: 0px;">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Left Logo -->
+        <a class="navbar-brand" href="#">
+          <img class="img11" src="assets/brown_logo.png" alt="Left Logo">
+        </a>
+
+        <!-- Centered Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conference">Conference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Department</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Committee</a>
+              <ul class="submenu">
+                <a class="nav-link" href="#">Advisory</a>
+                <a class="nav-link" href="#committee">Organizing</a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+          
   
           <!-- Right Logo -->
           <a class="navbar-brand" href="#">
@@ -100,6 +108,7 @@
     <div class="container-fluid">
       <div class="row">
         
+        <div class="content-overlay">
         <div class="main-body text-center pt-3">
           
           <!-- New Heading -->
@@ -180,8 +189,30 @@
             // Update the countdown every second
             const timerInterval = setInterval(updateCountdown, 1000);
           </script>
+          <!-- <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const mainDiv = document.getElementById('main');
+              const images = [
+                "assets/main-bg.jpg",
+                "assets/main-bg2.fjpg",
+                "assets/main-bg3.jpg",
+                "assets/main-bg4.jpg"
+              ];
+              let currentIndex = 0;
+        
+              function updateBackgroundImage() {
+                mainDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+                currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+              }
+        
+              updateBackgroundImage(); // Set initial background image
+              setInterval(updateBackgroundImage, 4000); // Change image every 4 seconds
+            });
+          </script> -->
+          
   
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -727,22 +758,54 @@
       </div>
     </div>
     <div class="orgnisers">
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-3">
-        <div class="teamprofile"  data-aos="zoom-in" data-aos-duration="1000">
-          <div class="teamprofileimg">
-             <a href="https://scholar.google.com/citations?hl=en&user=D3A13LgAAAAJ&view_op=list_works&sortby=pubdate">
-              <img src="assets/fac1.png">
-             </a>
+      <div class="row d-flex justify-content-center">
+        <!-- Profile 1 -->
+        <div class="col-sm-3">
+          <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="teamprofileimg">
+              <a href="https://scholar.google.com/citations?hl=en&user=D3A13LgAAAAJ&view_op=list_works&sortby=pubdate">
+                <img src="assets/fac1.png">
+              </a>
+            </div>
+            <div class="teamprofiletxt">
+              <h1 class="fs-16 fw-900">Dr Muthu Prabhu S</h1>
+              <p class="fs-14 fw-500">Organiser</p>
+            </div>
           </div>
-          <div class="teamprofiletxt">
-            <h1 class="fs-16 fw-900">Dr Muthu Prabhu S</h1>
-            <p class="fs-14 fw-500">Organiser</p> 
+        </div>
+        
+        <!-- Profile 2 -->
+        <div class="col-sm-3">
+          <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="teamprofileimg">
+              <a href="https://scholar.google.com/citations?hl=en&user=D3A13LgAAAAJ&view_op=list_works&sortby=pubdate">
+                <img src="assets/sachil sharma.png">
+              </a>
+            </div>
+            <div class="teamprofiletxt">
+              <h1 class="fs-16 fw-900">Dr Sachil sharma</h1>
+              <p class="fs-14 fw-500">Organiser</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Profile 3 -->
+        <div class="col-sm-3">
+          <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="teamprofileimg">
+              <a href="https://scholar.google.co.in/citations?user=ewAbORMAAAAJ">
+                <img src="assets/illa ramkanth.png">
+              </a>
+            </div>
+            <div class="teamprofiletxt">
+              <h1 class="fs-16 fw-900">Dr Ramkanth illa</h1>
+              <p class="fs-14 fw-500">Organiser</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+    
     
     <div class="row ">
       <div class="ourteamtitle w-100 text-center m-3">
