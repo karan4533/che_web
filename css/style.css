@@ -428,8 +428,16 @@ header {
 .navbar-brand .img11 {
   width: 100%;
 }
+
 .img1 {
   width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .img1 {
+      height: 70px;
+      width: auto;
+  }
 }
 .max-width-700 {
   max-width: 900px;
@@ -1011,6 +1019,14 @@ footer a:hover {
   box-sizing: border-box;
   max-width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+      height: auto;
+      width: 80px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .table-container {
     width: 100%;
