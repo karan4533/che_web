@@ -430,14 +430,25 @@ header {
 }
 
 .img1 {
-  width: 50%;
+    width: 50%;
+    max-height: 80px;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 768px) {
-  .img1 {
-      height: 70px;
+    .img1 {
+      height: 40px;
       width: auto;
-  }
+      max-width: 100%;
+      object-fit: contain;
+      z-index: 5;
+    }
+    .img11 {
+      --svgcolor: white;
+      fill: var(--svgcolor);
+      filter: brightness(0) invert(1);
+    }
+    
 }
 .max-width-700 {
   max-width: 900px;
