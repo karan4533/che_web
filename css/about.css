@@ -371,7 +371,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
-  min-height: 150vh;
+  min-height: 80vh;
 }
 
 .background-video {
@@ -477,7 +477,7 @@ header {
 
 .content-overlay {
   position: absolute;
-  top: 20%; /* Adjust as needed */
+  top: 40%; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%); /* Center the block horizontally */
   width: 80%; /* Adjust as needed */
@@ -567,85 +567,140 @@ header {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-
+/* Base Styles for Department of Chemistry */
 #section2 {
-  position: relative;
-  text-align: center;
-  min-height: 100vh;
-  background-image: url("../assets/about1.png");
-  background-size: auto;
-  padding: 15px;
-}
-.about-us {
-  text-align: justify;
-  border: 0px solid;
-  position: relative;
-  /* box-shadow: 0px 0px 14px 0px #ffffff00; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: auto;
-  background-color: #ffffffe6;
-  background-size: cover;
-}
-
-.about-tedx {
-  padding-top: 20px;
-}
-.about-tedxmitsg {
-  padding-top: 20px;
-}
-.sata {
-  width: 100%;
-  top: 35px;
-  left: 10px;
-}
-.sata img {
-  height: auto;
-  width: 100%;
-}
-
-.line-breaker {
-  height: 400px;
-  overflow: hidden;
-}
-.line-breaker img {
-  height: auto;
-  width: 100%;
-}
-#section3 {
-  padding-bottom: 15px;
-  background-repeat: no-repeat;
-  background-image: url("../assets/tedx.png");
-  background-size: cover;
-  height: auto;
-  background-color: black;
-}
-hr.style13 {
-  height: 9px;
-  border: 0;
-  box-shadow: -3px 4px 3px 4px #ff0000 inset;
-}
-.pastevents {
-  margin: auto;
-  width: 57%;
-  background-size: cover;
-}
-.carousel {
-  width: 100% !important;
-}
-.carouseltedx {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
-}
-hr.style2 {
-  border-top: 3px double #ffffff;
-}
-hr.style3 {
-  width: 80%;
-  border-top: 3px double #000f;
-}
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light grey background for distinction */
+  }
+  
+  #section2 h1.section2title {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  #section2 .about-department h1,
+  #section2 .programs-offered h1,
+  #section2 .scholarships h1,
+  #section2 .research-areas h1,
+  #section2 .research-at-vit-ap h1 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #section2 .about-department p,
+  #section2 .programs-offered ul li,
+  #section2 .scholarships ul li,
+  #section2 .research-areas ul li,
+  #section2 .research-at-vit-ap ul li,
+  #section2 .research-at-vit-ap table th,
+  #section2 .research-at-vit-ap table td {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  #section2 .about-us {
+    margin-top: 40px;
+  }
+  
+  #section2 .container-fluid {
+    padding: 0 30px;
+  }
+  
+  #section2 .about-department {
+    margin-bottom: 30px;
+  }
+  
+  #section2 .programs-offered,
+  #section2 .scholarships,
+  #section2 .research-areas,
+  #section2 .research-at-vit-ap {
+    margin-bottom: 50px;
+  }
+  
+  /* Headings */
+  #section2 h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #section2 .text-base-color {
+    color: #d9534f; /* Base color, matching the red theme */
+  }
+  
+  /* List styles */
+  #section2 .programs-offered ul,
+  #section2 .scholarships ul,
+  #section2 .research-areas ul,
+  #section2 .research-at-vit-ap ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #section2 .programs-offered ul li,
+  #section2 .scholarships ul li,
+  #section2 .research-areas ul li,
+  #section2 .research-at-vit-ap ul li {
+    margin-bottom: 15px;
+  }
+  
+  #section2 .programs-offered ul li ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  #section2 .programs-offered ul li ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Table Styles */
+  #section2 .research-at-vit-ap table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  #section2 .research-at-vit-ap table th,
+  #section2 .research-at-vit-ap table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  #section2 .research-at-vit-ap table thead {
+    background-color: #690101; /* Matching the existing theme */
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #section2 h1.section2title {
+      font-size: 28px;
+    }
+  
+    #section2 .about-department h1,
+    #section2 .programs-offered h1,
+    #section2 .scholarships h1,
+    #section2 .research-areas h1,
+    #section2 .research-at-vit-ap h1 {
+      font-size: 18px;
+    }
+  
+    #section2 .about-department p,
+    #section2 .programs-offered ul li,
+    #section2 .scholarships ul li,
+    #section2 .research-areas ul li,
+    #section2 .research-at-vit-ap ul li {
+      font-size: 14px;
+    }
+  }
+  
 /* General styles for the speakers section */
 #speakers {
   /* padding: 40px 0; Increased padding for better spacing */
