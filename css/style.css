@@ -362,7 +362,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
-  height: 112vh;
+  min-height: 130vh;
 }
 
 .background-video {
@@ -445,6 +445,7 @@ header {
     #navbar-nav {
     padding: 10px;-top: 10px;
   }
+
 
   .img11 {
     --svgcolor: white;
