@@ -7,33 +7,37 @@
     <!-- Keywords and Tags -->
     <meta
       name="description"
-      content="TEDxMITSG, x = independently organised TED event. Moving The Margins. 25 January, at MITS,Gwalior."
+      content="SuWatE’24 = International Conference on Next Generation Sustainable Materials for Water and Energy - 2024."
     />
     <meta
       name="keywords"
-      content="TEDx, MITSG, MITS Gwalior, Gwalior,Madhav Institute of Technology and Science , event, talks"
+      content="SuWatE’24, International Conference on Next Generation Sustainable Materials for Water and Energy - 2024"
     />
     <meta name="robots" content="noindex" />
     <!-- Social media tags -->
     <!-- Open Graph -->
-    <meta property="og:title" content="TEDxMITSG" />
+    <meta property="og:title" content="SuWatE’24" />
     <meta
       property="og:description"
-      content="Moving The Margins ,25 January, at MITS,Gwalior."
+      content="SuWatE’24, International Conference on Next Generation Sustainable Materials for Water and Energy - 2024"
     />
-    <meta
-      property="og:image"
-      content="https://tedxmitsg.com/assets/light-social.png"
-    />
-    <meta property="og:url" content="https://tedxmitsg.com" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TMitsg" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-152687064-2"
-    ></script>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5WSFHVTP");
+    </script>
+    <!-- End Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -54,33 +58,34 @@
     <link rel="stylesheet" type="text/css" href="css/loader.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    </head>
-    <body>
-      <div class="se-pre-con">
-        <div class="drawing" id="loading">
-          <div class="loading-dot"></div>
-        </div>
+  </head>
+  <body>
+    <div class="se-pre-con">
+      <div class="drawing" id="loading">
+        <div class="loading-dot"></div>
       </div>
-      <script>
-        AOS.init();
-      </script>
+    </div>
+    <script>
+      AOS.init();
+    </script>
 
-      <div id="main">
-        <video autoplay muted loop class="background-video">
-          <source src="assets/intro_c60395eb0f.mp4" type="video/mp4" />
-        </video>
+    <div id="main">
+      <video autoplay muted loop class="background-video">
+        <source src="assets/intro_c60395eb0f.mp4" type="video/mp4" />
+      </video>
 
-        <!-- <div id="particles-js"></div> -->
+      <!-- <div id="particles-js"></div> -->
 
-        <!-- Your existing HTML content -->
-        <header>
-          <nav
-            class="navbar navbar-expand-lg py-2  navbar-dark bg-trans sticky-top"
-            style="margin-top: 0px" id="nav"
+      <!-- Your existing HTML content -->
+      <header>
+        <nav
+          class="navbar navbar-expand-lg py-2 navbar-dark bg-trans sticky-top"
+          style="margin-top: 0px"
+          id="nav"
+        >
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
           >
-            <div
-              class="container-fluid d-flex justify-content-between align-items-center"
-            >
             <!-- Left Logo -->
             <a class="navbar-brand" href="#">
               <img class="img11" src="assets/brown_logo.png" alt="Left Logo" />
@@ -1434,8 +1439,6 @@
         </div>
       </div>
     </div>
-    
-
 
     <div id="contactus">
       <div class="container-fluid">
@@ -1512,54 +1515,62 @@
       </p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+    <script type="text/javascript">
+      var modal = document.getElementById("myModal");
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    $(".navbar-nav>li>a").on("click", function () {
-      $(".navbar-collapse").collapse("hide");
-    });
-  </script>
-  <script type="text/javascript">
-    var modal = document.getElementById("myModal");
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-    };
-  </script>
-  <script language="javascript" type="text/javascript">
-    $(window).on("load", function () {
-      $(".se-pre-con").fadeOut("slow");
-    });
-  </script>
+      };
 
-  <script src="js/particles.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/countdown1.js"></script>
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script language="javascript" type="text/javascript">
+      $(window).on("load", function () {
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
 
-<script src="js/main.js"></script>
-  
-</body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5WSFHVTP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/countdown1.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
