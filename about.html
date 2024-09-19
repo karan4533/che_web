@@ -4,71 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About VIT-AP</title>
-  <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-    <link rel="stylesheet" type="text/css" href="css/loader.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/about.css" />
+  <link rel="stylesheet" type="text/css" href="css/loader.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/nav.css" />
+  
 </head>
+
 <body>
   <div id="main">
-    <video autoplay muted loop class="background-video">
+    <video autoplay muted loop class="background-video" id="bgVideo">
       <source src="assets/intro_c60395eb0f.mp4" type="video/mp4" />
     </video>
 
-    <!-- <div id="particles-js"></div> -->
-
-    <!-- Your existing HTML content -->
-    <header style="background: #10101000;">
-      <nav
-        class="navbar navbar-expand-lg py-2 navbar-dark bg-trans sticky-top"
-        style="margin-top: 0px"
-        id="nav"
-      >
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center"
-        >
+    <!-- Fixed Navbar -->
+    <header style="background: #00000000;">
+      <nav class="navbar navbar-expand-lg py-2 navbar-dark bg-trans sticky-top" style="margin-top: 0px" id="nav">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
           <!-- Left Logo -->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand">
             <img class="img11" src="assets/brown_logo.png" alt="Left Logo" />
           </a>
 
           <!-- Centered Navigation Links -->
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarResponsive"
-          >
+          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#home">Home</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" >About</a>
+                <a class="nav-link" href="#">About</a>
                 <ul class="submenu">
                   <a class="nav-link" href="about.html">VIT-AP</a>
-                  <a class="nav-link" href="index.html#section2">Department</a>
-                  <a class="nav-link" href="index.html#committee">Brouchure</a>
+                  <a class="nav-link" href="index.html#department">Department</a>
+                  <a class="nav-link" href="#">Brochure</a>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" >Call for Letter</a>
+                <ul class="submenu">
+                  <a class="nav-link" href="assets/SuWatE'24_Abstract-Template.pdf" target="_blank">Download Abstract</a>
+                  <a class="nav-link" href="#">Submission</a>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#conference">Conference</a>
               </li>
-              
               <li class="nav-item">
                 <a class="nav-link" href="index.html#speakers">Speakers</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#">Committee</a>
                 <ul class="submenu">
-                  <a class="nav-link" href="about.html">Advisory</a>
+                  <a class="nav-link" href="advisory.html">Advisory</a>
                   <a class="nav-link" href="index.html#ourteam">Organizing</a>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sponsors</a>
+                <a class="nav-link" href="#sponsors">Sponsors</a>
               </li>
             </ul>
           </div>
@@ -79,181 +73,145 @@
           </a>
 
           <!-- Mobile toggle button for navigation -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
     </header>
 
+    <!-- Page Content -->
     <div class="container-fluid">
       <div class="row">
         <div class="content-overlay">
           <div class="main-body text-center pt-3">
             <!-- New Heading -->
-            <p class="fs-35 fw-600 max-width-700">
-              About</p>
+            <p class="fs-35 fw-600 max-width-700">About</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Department of Chemistry Section -->
-
   </div>
-  <div>
-  <section id="about-chemistry" class="about section">
-    <div class="container">
-        <div class="row position-relative">
-            <!-- Image and Video Link -->
-            <div class="col-lg-5 about-img" data-aos="zoom-out" data-aos-delay="200">
-                <img src="assets/Chemistry/chemistry-lab.jpg" alt="Chemistry Lab">
-                <a href="assets/Chemistry/chemistry-video.mp4" class="glightbox stretched-link"></a>
-            </div>
-  
-            <!-- About Chemistry Section -->
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="inner-title">About <span>Department of Chemistry</span></h2>
-                <div class="our-story">
-                    <h4>Est 2017</h4>
-                    <h3>Our Story</h3>
-                    <p>
-                        The Department of Chemistry offers an M.Sc. Chemistry program at VIT-AP University.
-                        This program provides ample opportunities for students to choose courses from a broad
-                        spectrum of cutting-edge areas in addition to fundamentals of organic, inorganic, physical,
-                        analytical, and computational chemistry.
-                    </p>
-                    <p>
-                        Sessions on improving technical skills, scientific writing, oral presentations, and research
-                        expertise have been incorporated into the curriculum. Furthermore, the students will have
-                        the scope to pursue their post-graduation thesis work at various national and international
-                        institutions and industries.
-                    </p>
-                    <div class="watch-video d-flex align-items-center position-relative">
-                        <i class="bi bi-play-circle"></i>
-                        <a href="assets/Chemistry/chemistry-video.mp4" class="glightbox stretched-link">Watch Video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+  <!-- About Our Campus Section -->
+  <section id="about-campus" class="about-section">
+    <div class="about-text">
+      <h2 class="inner-title">About <span class="cl-red fs-30">VIT-AP</span></h2>
+      <p class="text-black fs-16">
+        With a rich legacy of 39 years of innovation in education and research, VIT has established itself as a leader in delivering quality education. Consistently ranked among the top educational institutions in the country, the VIT group takes pride in achieving new heights of knowledge and excellence through hard work and dedication. Continuing this tradition, the pioneering leadership at VIT-AP University fosters strong academia-industry partnerships, driving forward with decisiveness and dynamism to become a leading university. VIT-AP University offers a wide range of opportunities and training programs to help students explore their abilities, develop core competencies, and undergo a holistic transformation to become better global citizens, embodying the motto 'Apply Knowledge - Improve Life.'
+      </p>
+      <div class="watch-video">
+        <i class="bi bi-play-circle"></i>
+        <a href="video/vit-video-1.mp4" class="glightbox stretched-link">Watch Campus Tour</a>
+      </div>
     </div>
-  </section><!-- /Department of Chemistry Section -->
-  
-  <!-- Programs Offered Section -->
-  <section id="programs-offered" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                <h3>Programs <span>Offered</span></h3>
-                <ul class="list-unstyled">
-                    <li>M.Sc. Chemistry in collaboration with Mitsui Kinzoku Components India Pvt. Ltd. (MKCI)
-                        <ul>
-                            <li>M.Sc. Chemistry</li>
-                            <li>Specialization in Pharmaceutical Chemistry</li>
-                            <li>Specialization in Analytical Chemistry</li>
-                        </ul>
-                    </li>
-                    <li>Ph.D. Chemistry</li>
-                    <li>Internship, placement, and higher studies opportunities for the M.Sc. students in reputed companies and universities.</li>
-                </ul>
-            </div>
-        </div>
+    <div class="about-img">
+      <img src="assets/clg1.png" alt="VIT-AP Campus">
     </div>
-  </section><!-- /Programs Offered Section -->
-  
-  <!-- Scholarships Section -->
-  <section id="scholarships" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                <h3><span>Scholarships</span></h3>
-                <p>100% scholarship opportunity for M.Sc. Chemistry students</p>
-                <ul class="list-unstyled">
-                    <li><strong>G.V. PG Merit Scholarship:</strong> 100% Full Merit scholarship to a candidate who has secured CGPA of 9.0 or 90% and above in the qualifying UG examination.</li>
-                    <li><strong>Rajeswari PG Merit Scholarship:</strong> 50% scholarship to a candidate who has secured CGPA of 8.0 or 80% and above, and an additional 25% for a girl candidate making it a 75% scholarship.</li>
-                </ul>
-            </div>
-        </div>
+  </section>
+
+  <!-- Department of Chemistry Section -->
+  <section id="about-chemistry" class="about-section">
+    <div class="about-img">
+      <img src="assets/chem.png" alt="Chemistry Lab">
     </div>
-  </section><!-- /Scholarships Section -->
-  
-  <!-- Research Areas Section -->
-  <section id="research-areas" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                <h3>Areas of <span>Innovation and Research</span></h3>
-                <ul class="list-unstyled row">
-                    <li class="col-md-4">Nanomaterials</li>
-                    <li class="col-md-4">Organic Chemistry</li>
-                    <li class="col-md-4">Energy materials</li>
-                    <li class="col-md-4">Catalysis</li>
-                    <li class="col-md-4">Environmental Chemistry</li>
-                    <li class="col-md-4">Inorganic Chemistry</li>
-                    <li class="col-md-4">Physical Chemistry</li>
-                    <li class="col-md-4">Biovaccination</li>
-                    <li class="col-md-4">Supramolecular Chemistry</li>
-                    <li class="col-md-4">Computational chemistry</li>
-                    <li class="col-md-4">Neurobiology</li>
-                </ul>
-            </div>
-        </div>
+    <div class="about-text">
+      <h2 class="inner-title">About <span class="cl-red fs-30">Department of Chemistry</span></h2>
+      <p class="text-black fs-16">
+        The Department of Chemistry offers an M.Sc. Chemistry program at VIT-AP University. This program provides ample opportunities for students to choose courses from a broad spectrum of cutting-edge areas in addition to fundamentals of organic, inorganic, physical, analytical, and computational chemistry.
+        Sessions on improving technical skills, scientific writing, oral presentations, and research expertise have been incorporated into the curriculum. Furthermore, the students will have the scope to pursue their post-graduation thesis work at various national and international institutions and industries.
+      </p>
+      <div class="watch-video">
+        <i class="bi bi-play-circle"></i>
+        <a href="assets/Chemistry/chemistry-video.mp4" class="glightbox stretched-link">Watch Video</a>
+      </div>
     </div>
-  </section><!-- /Research Areas Section -->
-  
-  <!-- Research at VIT-AP Section -->
-  <section id="research-at-vit-ap" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
-                <h3>Research at <span>VIT-AP</span></h3>
-                <!-- Fellowship Table -->
-                <table class="table table-bordered table-striped">
-                    <thead style="background-color: #690101; color: white;">
-                        <tr>
-                            <th>VIT Fellowship for PhD students</th>
-                            <th>GATE Qualified (Above 60% in PG)</th>
-                            <th>Others</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>First Year</td>
-                            <td>Rs. 31,000/Month</td>
-                            <td>Rs. 25,000/Month</td>
-                        </tr>
-                        <tr>
-                            <td>Second and Third Year</td>
-                            <td>Rs. 35,000/Month</td>
-                            <td>Rs. 31,000/Month</td>
-                        </tr>
-                    </tbody>
-                </table>
-  
-                <ul class="list-unstyled">
-                    <li>Raman Research Award up to 1 lakh for publications exclusively for research scholars</li>
-                    <li>Contingency amount of Rs. 10,000 per year for all Scholars</li>
-                    <li>Open access research publication support for Q1 and Q2 Journals</li>
-                    <li>Financial support for attending conferences/workshop/training etc.</li>
-                    <li>Six external funded projects (More than Rs. 1.8 Cr)</li>
-                    <li>Skill development-oriented curriculum</li>
-                    <li>Global collaborations with various reputed academic, research institutes, and industries</li>
-                    <li>More than 20 projects funded by the university to the SAS faculties and students</li>
-                    <li>The department has more than 20 faculties, all with Ph.D.s and Postdocs from top-tier global universities</li>
-                    <li>Diverse mix of national and international students</li>
-                </ul>
-            </div>
+  </section>
+
+
+  <!-- Contact Us Section -->
+  <div id="contactus">
+    <div class="container-fluid">
+      <div class="row footer-contactUs">
+        <div class="col-md-4">
+          <div class="buyticketsbottom">
+            <a href="https://shorturl.at/y2l3T" class="btnticketsbottom">Register Now</a>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="contactcontent text-left">
+            <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
+            <div class="contactcontenttext text-left">
+              <p class="fs-18 text-white fw-400 contactnumber">+919944498483</p>
+              <p class="fs-18 text-white fw-400 contactmail">muthuprabhu.s@vitap.ac.in</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="socialmedia text-left">
+            <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
+            <div class="socialmediaico">
+              <a href="https://www.facebook.com/vitap.university/" target="_blank"><img src="assets/facebook.png"/></a>
+              <a href="https://www.instagram.com/vitap.university/?hl=en" target="_blank"><img src="assets/instagram.png"/></a>
+              <a href="https://www.linkedin.com/school/vitap-university/posts/?feedView=all" target="_blank"><img src="assets/linkedin.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="footerlogo">
+          <img src="assets/white_logo.png" />
+        </div>
+      </div>
     </div>
-  </section><!-- /Research at VIT-AP Section -->
-</div>
+  </div>
+
+  <footer class="text-center footer">
+    <p class="text-white fw-100 fs-13 m-0">&#169; Vellore Institue of Technology, Amaravati</p>
+    <p class="text-white fw-100 fs-13 m-0">
+      Designed and Developed by <a href="index.html" target="_blank"><b>Our Team</b></a>
+    </p>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script>
+    // Navbar Shrink on Scroll
+    window.onscroll = function () {
+      const nav = document.getElementById('nav');
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        nav.classList.add('navbar-shrink');
+      } else {
+        nav.classList.remove('navbar-shrink');
+      }
+
+      // Play/Pause Background Video on Scroll
+      const bgVideo = document.getElementById('bgVideo');
+      if (document.documentElement.scrollTop > 500) {
+        bgVideo.pause();
+      } else {
+        bgVideo.play();
+      }
+    };
+
+    // Smooth Scrolling
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <!-- Bootstrap and AOS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-</html>  
-  
+</html>

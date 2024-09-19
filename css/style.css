@@ -506,6 +506,12 @@ header {
   object-fit: contain;
   border-radius: 50px; /* Ensure logo fits within its container */
 }
+.logo12 {
+  width: 160px; /* Set a default width for all logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 50px; /* Ensure logo fits within its container */
+}
 
 .navbar li a,
 .navbar {
@@ -559,6 +565,42 @@ header {
   margin: auto; /* Center the container */
 }
 
+.registration-fee{
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+.about-conference {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.text-container {
+  flex: 1; 
+  padding-right: 20px; 
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  align-items: center;
+  justify-content: center;
+  max-width:600px; 
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 12%;
+  
+}
+
 .important-dates {
   display: flex;
   justify-content: center;
@@ -567,6 +609,42 @@ header {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+.key-topics-section {
+  margin-top: 40px; 
+}
+
+.key-topics-section h1 {
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.key-topics-content {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between; 
+}
+
+.topic {
+  flex: 1 1 calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.topic h2 {
+  margin-bottom: 10px; 
+}
+
+.topic ul {
+  padding-left: 20px; 
+}
+
+@media (max-width: 768px) {
+  .topic {
+    flex: 1 1 100%; 
+  }
+}
+
 
 #section2 {
   position: relative;
@@ -1015,9 +1093,96 @@ footer a:hover {
   font-weight: 400;
 }
 #ourteam {
-  padding: 30px;
+  
   height: auto;
 }
+/* Styling for Core Team and Organizing Secretaries */
+.coreteam .row, .organizing-secretaries .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.coreteam .teamprofiletxt h1, 
+.organizing-secretaries .teamprofiletxt h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.coreteam .teamprofile, 
+.organizing-secretaries .teamprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.coreteam, .organizing-secretaries {
+  padding: 20px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.ourteamtitle {
+  margin: 30px 0;
+}
+
+.ourteamtitle .fs-20 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Removing the extra spacing around the list */
+.team-list {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.team-list li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.team-container {
+  display: flex;
+  justify-content: space-around; /* Space between the two sections */
+  gap: 40px; /* Adjust space between columns */
+}
+
+.organizing-secretaries, .local-organizing-committee {
+  flex: 1; /* Ensures both sections take equal width */
+  max-width: 50%; /* Prevents the sections from being too wide */
+}
+
+.organizing-secretaries .row, 
+.local-organizing-committee .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.team-list li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
 .speakerprofilepage {
   background-color: black;
 }

@@ -306,14 +306,15 @@ body {
   position: relative; /* Position relative for submenu positioning */
 }
 
+ 
+
 /* General styles for submenu */
 .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #333;
-  border: 1px solid #444;
-  border-radius: 5px;
+  background-color: #ffffff;
+  border-radius:5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translateY(-20px) scale(0.8); /* Initially smaller */
@@ -342,12 +343,12 @@ body {
   color: #fff;
   text-decoration: none; /* Remove underline */
   padding: 10px; /* Add padding for better spacing */
-  border-bottom: 1px solid #444; /* Add separator between items */
+
 }
 
 .submenu > a:hover {
   color: #ccc;
-  background-color: #444; /* Add background color on hover */
+  background-color: #ffffff; /* Add background color on hover */
 }
 
 /* Remove border from the last item */
@@ -460,7 +461,8 @@ header {
     --svgcolor: white;
     fill: var(--svgcolor);
     filter: brightness(0) invert(1);
-    /* height: 10px; */
+    width: 100px; 
+    height: auto; 
   }
   element.style {
     width: 50%;
@@ -507,14 +509,115 @@ header {
   border-radius: 50px; /* Ensure logo fits within its container */
 }
 
-.navbar li a,
-.navbar {
+.navbar li a {
   font-family: Poppins;
   font-weight: 500;
-  color: white !important;
-  font-size: 18px;
+  color: #333333 !important;
+  font-size: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding:20px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transaprent;
+  transition: background-color 0.3s ease;
+  height: 100px; 
+  padding: 10px;
+  align-items: center;
+}
+.navbar .nav-center {
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  align-items: center;
+  flex-grow: 1;
+}
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.navbar-nav li {
+  margin: 0 ;
+  gap:10px;  
+}
+
+.navbar-nav li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+
+/* Ensure the nav list is perfectly centered */
+.navbar .container {
+  display: flex;
+  justify-content: center; /* Centers the nav list */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav li {
+    margin: 0 10px; /* Reduces spacing for smaller screens */
+  }
+
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-left, .logo-right {
+    width: 80px; /* Reduce logo size on smaller screens */
+  }
+}
+.navbar .container {
+  height: 100%; /* Ensure the container fills the height of the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust spacing as needed */
+}
+.navbar-nav .nav-link {
+  font-size: 14px; /* Reduce font size */
+  padding: 10px 15px; /* Adjust padding for smaller nav items */
+}
+
+/* Adjust logo sizes */
+.img11 {
+  width: 80px;  /* Set desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+.img1{
+  width: 90px;  
+  height: auto;
+}
+
+/* Shrink the navbar when scrolling */
+.navbar-shrink {
+  background-color: #f8f9fa;
+}
+
+/* Adjust content position to avoid hiding behind the navbar */
+#main {
+  padding-top: 80px; /* Adjust this value if the navbar height changes */
+}
+
+/* Smooth scroll styling */
+.nav-link {
+  color: white !important;
+}
 .navbar-toggle {
   background-color: transparent !important;
   border: 0;
@@ -566,6 +669,64 @@ header {
 .text-black {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-img {
+  flex: 1;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.inner-title {
+  margin-bottom: 20px;
+}
+
+.watch-video {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.watch-video i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.text-black {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.important-dates {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust footer logo size */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-logo img {
+    width: 80px; /* Adjust for smaller screens */
+  }
 }
 /* Base Styles for Department of Chemistry */
 #section2 {
@@ -880,7 +1041,7 @@ button:focus {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(237, 201, 201, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -938,105 +1099,135 @@ button:focus {
   width: 100%;
   height: auto;
   background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.footerlogo {
-  width: 50%;
+
+/* Contact Section */
+.contactcontent {
+  text-align: left;
+  flex-basis: 100%; /* Take full width on smaller screens */
 }
-.footerlogo img {
-  width: 100%;
-}
-.footerlogo1 {
-  width: 50%;
-}
-.picsart-logo img {
-  width: 50%;
-}
-.socialmedia img {
+
+.contactcontenttext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 10px;
 }
-.linkedinred img {
+
+.contactnumber,
+.contactmail {
+  padding-left: 30px; /* Adjust padding for the icons */
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-y: center;
+}
+
+.contactnumber {
+  background-image: url(../assets/telephone.png);
+}
+
+.contactmail {
+  background-image: url(../assets/envelope.png);
+}
+
+/* Social Media */
+.socialmedia {
+  text-align: left;
+}
+
+.socialmediaico img {
   width: 32px;
-  height: 32px;
   margin-left: 10px;
-  margin-right: 24%;
-  top: 0;
 }
-.shape {
-  position: absolute;
-  left: 15%;
-  bottom: -65px;
+
+/* Logo Section */
+.footerlogo {
+  text-align: center;
+  margin-top: 20px;
 }
-.shape img {
-  width: 26%;
+
+.footerlogo img {
+  width: 50%;
 }
-footer {
-  background-color: #222222;
-}
-footer a {
-  color: red;
-}
-footer a:hover {
-  color: red;
-  text-decoration: none;
-}
-.btntickets {
-  background: white;
-  padding: 10px 30px 10px 30px;
-  border-radius: 28px;
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.btntickets:hover {
-  color: black;
-  text-decoration: none;
-}
+
+/* Button */
 .btnticketsbottom {
   background: white;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   border-radius: 28px;
   color: black;
   font-size: 20px;
   font-weight: 600;
-  position: relative;
+  display: inline-block;
+  margin-top: 10px;
 }
-.btnticketsbottom1 {
-  background: #e62b1e;
-  padding: 10px 30px 10px 30px;
-  border-radius: 28px;
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.btnticketsbottom1:hover {
-  color: black;
-  text-decoration: none;
-}
+
 .btnticketsbottom:hover {
   color: black;
   text-decoration: none;
 }
-.buyticketsbottom {
-  text-align: left;
-  padding-top: 10%;
-  width: 100%;
+
+/* Footer */
+footer {
+  background-color: #222222;
 }
-.buyticketsbottom1 {
-  text-align: center;
-  width: 100%;
+
+footer a {
+  color: red;
 }
-.pasteventtext {
-  text-align: justify;
+
+footer a:hover {
+  color: red;
+  text-decoration: none;
 }
-.text-justify {
-  text-align: justify;
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  #contactus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactcontent, .socialmedia, .footerlogo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btnticketsbottom {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .socialmediaico img {
+    width: 28px;
+  }
 }
-.colon {
-  color: white;
-  font-size: 32px;
-  padding-top: 0.5rem;
+
+/* For mobile phones (576px and below) */
+@media (max-width: 576px) {
+  .contactnumber,
+  .contactmail {
+    padding-left: 20px;
+    background-size: 18px;
+  }
+
+  .socialmediaico img {
+    width: 24px;
+  }
+
+  .footerlogo img {
+    width: 70%;
+  }
+
+  .btnticketsbottom {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
 }
 
 .teamprofile {
@@ -1103,6 +1294,33 @@ footer a:hover {
   box-sizing: border-box;
   max-width: 100%;
 }
+.section {
+  padding: 60px 0;
+}
+.inner-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.our-story p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+.watch-video {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.about-img img {
+  width: 100%; /* Adjust to 100% or any other value as needed */
+  max-width: 600px; /* Set a maximum width if needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+#about-campus, #about-chemistry {
+  padding: 40px 0;
+}
+
 
 @media only screen and (max-width: 768px) {
   .navbar-brand img {
@@ -1283,7 +1501,7 @@ footer a:hover {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: black;
+    background-color: transparent;
     margin: 0;
   }
   .navbar-brand {
@@ -1364,3 +1582,92 @@ footer a:hover {
     }
   }
 }
+@media (max-width: 768px) {
+  .contactcontent, .socialmedia {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footerlogo img {
+    width: 80%; /* Reduce logo size */
+    margin: 0 auto;
+  }
+
+  .btntickets,
+  .btnticketsbottom,
+  .btnticketsbottom1 {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .buyticketsbottom {
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .linkedinred img {
+    margin-right: 0;
+  }
+
+  .shape img {
+    width: 40%; /* Adjust shape size */
+  }
+
+  .contactnumber,
+  .contactmail {
+    padding-left: 10%; /* Adjust padding for smaller screens */
+    background-size: 18px;
+  }
+
+  .colon {
+    font-size: 28px;
+  }
+}
+
+/* For devices with width of 576px or less (mobile phones) */
+@media (max-width: 576px) {
+  .contactcontent, .socialmedia {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footerlogo img {
+    width: 70%; /* Further reduce logo size for mobile */
+  }
+
+  .btntickets,
+  .btnticketsbottom,
+  .btnticketsbottom1 {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  .buyticketsbottom {
+    padding-top: 15px;
+  }
+
+  .contactnumber,
+  .contactmail {
+    padding-left: 8%;
+    background-size: 16px;
+  }
+
+  .linkedinred img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .shape img {
+    width: 50%;
+  }
+
+  .colon {
+    font-size: 24px;
+  }
+
+  .text-justify,
+  .pasteventtext {
+    text-align: left; /* Better readability on small screens */
+  }
+}
+
