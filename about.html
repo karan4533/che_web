@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/loader.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="css/nav.css" />
-  
 </head>
 
 <body>
@@ -20,33 +19,38 @@
 
     <!-- Fixed Navbar -->
     <header style="background: #00000000;">
-      <nav class="navbar navbar-expand-lg py-2 navbar-dark bg-trans sticky-top" style="margin-top: 0px" id="nav">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top" id="nav">
+        <div class="container-fluid">
           <!-- Left Logo -->
           <a class="navbar-brand">
             <img class="img11" src="assets/brown_logo.png" alt="Left Logo" />
           </a>
 
-          <!-- Centered Navigation Links -->
-          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
+          <!-- Mobile Toggle Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">About</a>
-                <ul class="submenu">
-                  <a class="nav-link" href="about.html">VIT-AP</a>
-                  <a class="nav-link" href="index.html#department">Department</a>
-                  <a class="nav-link" href="#">Brochure</a>
-                </ul>
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" href="about.html">VIT-AP</a>
+                  <a class="dropdown-item" href="index.html#department">Department</a>
+                  <a class="dropdown-item" href="assets/SuWatE'24_Final.pdf" target="_blank">Brochure</a> <!-- Corrected Brochure link -->
+                </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" >Call for Letter</a>
-                <ul class="submenu">
-                  <a class="nav-link" href="assets/SuWatE'24_Abstract-Template.pdf" target="_blank">Download Abstract</a>
-                  <a class="nav-link" href="#">Submission</a>
-                </ul>
+                <a class="nav-link dropdown-toggle" href="#" id="callForLetterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call for Letter</a>
+                <div class="dropdown-menu" aria-labelledby="callForLetterDropdown">
+                  <a class="dropdown-item" href="assets/SuWatE'24_Abstract-Template.pdf" target="_blank">Download Abstract</a>
+                  <a class="dropdown-item" href="submission.html">Submission</a> <!-- Corrected Submission link -->
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#conference">Conference</a>
@@ -55,14 +59,14 @@
                 <a class="nav-link" href="index.html#speakers">Speakers</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Committee</a>
-                <ul class="submenu">
-                  <a class="nav-link" href="advisory.html">Advisory</a>
-                  <a class="nav-link" href="index.html#ourteam">Organizing</a>
-                </ul>
+                <a class="nav-link dropdown-toggle" href="#" id="committeeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Committee</a>
+                <div class="dropdown-menu" aria-labelledby="committeeDropdown">
+                  <a class="dropdown-item" href="advisory.html">Advisory</a>
+                  <a class="dropdown-item" href="index.html#ourteam">Organizing</a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sponsors">Sponsors</a>
+                <a class="nav-link" href="sponsors.html">Sponsors</a> <!-- Corrected Sponsors link -->
               </li>
             </ul>
           </div>
@@ -71,11 +75,6 @@
           <a class="navbar-brand" href="#">
             <img class="img1" src="assets/Picsart.png" alt="Right Logo" />
           </a>
-
-          <!-- Mobile toggle button for navigation -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
     </header>
@@ -128,7 +127,6 @@
     </div>
   </section>
 
-
   <!-- Contact Us Section -->
   <div id="contactus">
     <div class="container-fluid">
@@ -160,58 +158,27 @@
       </div>
 
       <div class="col-md-3">
-        <div class="footerlogo">
-          <img src="assets/white_logo.png" />
-        </div>
+        <p class="text-white text-right p-3">Designed by <a href="https://suwati24.com" class="text-white">Suwati'24</a></p>
       </div>
     </div>
   </div>
 
-  <footer class="text-center footer">
-    <p class="text-white fw-100 fs-13 m-0">&#169; Vellore Institue of Technology, Amaravati</p>
-    <p class="text-white fw-100 fs-13 m-0">
-      Designed and Developed by <a href="index.html" target="_blank"><b>Our Team</b></a>
-    </p>
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="container-fluid footerbg">
+      <div class="row footer-bg">
+        <div class="col-md-12 col-sm-12 text-center">
+          <div class="footertext">
+            <p class="text-white fs-15 fw-400">Copyright © VIT-AP 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- JavaScript Section -->
-  <script>
-    // Navbar Shrink on Scroll
-    window.onscroll = function () {
-      const nav = document.getElementById('nav');
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        nav.classList.add('navbar-shrink');
-      } else {
-        nav.classList.remove('navbar-shrink');
-      }
-
-      // Play/Pause Background Video on Scroll
-      const bgVideo = document.getElementById('bgVideo');
-      if (document.documentElement.scrollTop > 500) {
-        bgVideo.pause();
-      } else {
-        bgVideo.play();
-      }
-    };
-
-    // Smooth Scrolling
-    document.querySelectorAll('a.nav-link').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
-  <!-- Bootstrap and AOS Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
