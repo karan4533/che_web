@@ -371,7 +371,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
-  min-height: 138vh;
+  min-height: 90vh;
 }
 
 .background-video {
@@ -477,7 +477,7 @@ header {
 
 .content-overlay {
   position: absolute;
-  top: 20%; /* Adjust as needed */
+  top: 40%; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%); /* Center the block horizontally */
   width: 80%; /* Adjust as needed */
@@ -649,7 +649,7 @@ header {
 #section2 {
   position: relative;
   text-align: center;
-  min-height: 100vh;
+  min-height: 50vh;
   background-image: url("../assets/about1.png");
   background-size: auto;
   padding: 15px;
@@ -1049,6 +1049,11 @@ footer a:hover {
 .buyticketsbottom1 {
   text-align: center;
   width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  margin: 15px auto;
+  justify-content: center;
 }
 .pasteventtext {
   text-align: justify;
