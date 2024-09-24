@@ -306,15 +306,14 @@ body {
   position: relative; /* Position relative for submenu positioning */
 }
 
- 
-
 /* General styles for submenu */
 .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ffffff;
-  border-radius:5px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translateY(-20px) scale(0.8); /* Initially smaller */
@@ -343,12 +342,12 @@ body {
   color: #fff;
   text-decoration: none; /* Remove underline */
   padding: 10px; /* Add padding for better spacing */
-
+  border-bottom: 1px solid #444; /* Add separator between items */
 }
 
 .submenu > a:hover {
   color: #ccc;
-  background-color: #ffffff; /* Add background color on hover */
+  background-color: #444; /* Add background color on hover */
 }
 
 /* Remove border from the last item */
@@ -372,7 +371,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .background-video {
@@ -461,8 +460,7 @@ header {
     --svgcolor: white;
     fill: var(--svgcolor);
     filter: brightness(0) invert(1);
-    width: 100px; 
-    height: auto; 
+    /* height: 10px; */
   }
   element.style {
     width: 50%;
@@ -508,116 +506,21 @@ header {
   object-fit: contain;
   border-radius: 50px; /* Ensure logo fits within its container */
 }
+.logo12 {
+  width: 160px; /* Set a default width for all logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 50px; /* Ensure logo fits within its container */
+}
 
-.navbar li a {
+.navbar li a,
+.navbar {
   font-family: Poppins;
   font-weight: 500;
-  color: #333333 !important;
-  font-size: 20px;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  padding:20px;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: transaprent;
-  transition: background-color 0.3s ease;
-  height: 100px; 
-  padding: 10px;
-  align-items: center;
-}
-.navbar .nav-center {
-  display: flex;
-  justify-content: center; /* Center the nav items */
-  align-items: center;
-  flex-grow: 1;
-}
-.navbar-nav {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-nav li {
-  margin: 0 ;
-  gap:10px;  
-}
-
-.navbar-nav li a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #333333;
-  font-size: 14px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-
-
-/* Ensure the nav list is perfectly centered */
-.navbar .container {
-  display: flex;
-  justify-content: center; /* Centers the nav list */
-  align-items: center;
-  width: 100%;
-  position: relative;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .navbar-nav li {
-    margin: 0 10px; /* Reduces spacing for smaller screens */
-  }
-
-  .navbar {
-    height: auto;
-    padding: 10px;
-  }
-
-  .logo-left, .logo-right {
-    width: 80px; /* Reduce logo size on smaller screens */
-  }
-}
-.navbar .container {
-  height: 100%; /* Ensure the container fills the height of the navbar */
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Adjust spacing as needed */
-}
-.navbar-nav .nav-link {
-  font-size: 14px; /* Reduce font size */
-  padding: 10px 15px; /* Adjust padding for smaller nav items */
-}
-
-/* Adjust logo sizes */
-.img11 {
-  width: 80px;  /* Set desired width */
-  height: auto; /* Maintain aspect ratio */
-}
-.img1{
-  width: 90px;  
-  height: auto;
-}
-
-/* Shrink the navbar when scrolling */
-.navbar-shrink {
-  background-color: #f8f9fa;
-}
-
-/* Adjust content position to avoid hiding behind the navbar */
-#main {
-  padding-top: 80px; /* Adjust this value if the navbar height changes */
-}
-
-/* Smooth scroll styling */
-.nav-link {
   color: white !important;
+  font-size: 18px;
 }
+
 .navbar-toggle {
   background-color: transparent !important;
   border: 0;
@@ -662,6 +565,42 @@ header {
   margin: auto; /* Center the container */
 }
 
+.registration-fee{
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+.about-conference {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.text-container {
+  flex: 1; 
+  padding-right: 20px; 
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  align-items: center;
+  justify-content: center;
+  max-width:600px; 
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 12%;
+  
+}
+
 .important-dates {
   display: flex;
   justify-content: center;
@@ -670,198 +609,121 @@ header {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.about-section {
+
+.key-topics-section {
+  margin-top: 40px; 
+}
+
+.key-topics-section h1 {
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.key-topics-content {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 20px 0;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between; 
 }
 
-.about-section img {
-  width: 100%;
-  height: auto;
-}
-
-.about-text {
-  flex: 1;
-  padding: 20px;
-}
-
-.about-img {
-  flex: 1;
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area while maintaining aspect ratio */
-}
-
-.inner-title {
+.topic {
+  flex: 1 1 calc(50% - 20px);
   margin-bottom: 20px;
 }
 
-.watch-video {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+.topic h2 {
+  margin-bottom: 10px; 
 }
 
-.watch-video i {
-  font-size: 24px;
-  margin-right: 10px;
-}
-.text-black {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.important-dates {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-logo img {
-  width: 100px; /* Adjust footer logo size */
-  height: auto;
+.topic ul {
+  padding-left: 20px; 
 }
 
 @media (max-width: 768px) {
-  .footer-logo img {
-    width: 80px; /* Adjust for smaller screens */
+  .topic {
+    flex: 1 1 100%; 
   }
 }
-/* Base Styles for Department of Chemistry */
+
+
 #section2 {
-    padding: 60px 0;
-    background-color: #f8f9fa; /* Light grey background for distinction */
-  }
-  
-  #section2 h1.section2title {
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 20px;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  #section2 .about-department h1,
-  #section2 .programs-offered h1,
-  #section2 .scholarships h1,
-  #section2 .research-areas h1,
-  #section2 .research-at-vit-ap h1 {
-    color: #333;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  #section2 .about-department p,
-  #section2 .programs-offered ul li,
-  #section2 .scholarships ul li,
-  #section2 .research-areas ul li,
-  #section2 .research-at-vit-ap ul li,
-  #section2 .research-at-vit-ap table th,
-  #section2 .research-at-vit-ap table td {
-    color: #333;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-  }
-  
-  #section2 .about-us {
-    margin-top: 40px;
-  }
-  
-  #section2 .container-fluid {
-    padding: 0 30px;
-  }
-  
-  #section2 .about-department {
-    margin-bottom: 30px;
-  }
-  
-  #section2 .programs-offered,
-  #section2 .scholarships,
-  #section2 .research-areas,
-  #section2 .research-at-vit-ap {
-    margin-bottom: 50px;
-  }
-  
-  /* Headings */
-  #section2 h1 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  #section2 .text-base-color {
-    color: #d9534f; /* Base color, matching the red theme */
-  }
-  
-  /* List styles */
-  #section2 .programs-offered ul,
-  #section2 .scholarships ul,
-  #section2 .research-areas ul,
-  #section2 .research-at-vit-ap ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  #section2 .programs-offered ul li,
-  #section2 .scholarships ul li,
-  #section2 .research-areas ul li,
-  #section2 .research-at-vit-ap ul li {
-    margin-bottom: 15px;
-  }
-  
-  #section2 .programs-offered ul li ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-  
-  #section2 .programs-offered ul li ul li {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  /* Table Styles */
-  #section2 .research-at-vit-ap table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-  }
-  
-  #section2 .research-at-vit-ap table th,
-  #section2 .research-at-vit-ap table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  
-  #section2 .research-at-vit-ap table thead {
-    background-color: #690101; /* Matching the existing theme */
-    color: #fff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #section2 h1.section2title {
-      font-size: 28px;
-    }
-  
-    #section2 .about-department h1,
-    #section2 .programs-offered h1,
-    #section2 .scholarships h1,
-    #section2 .research-areas h1,
-    #section2 .research-at-vit-ap h1 {
-      font-size: 18px;
-    }
-  
-    #section2 .about-department p,
-    #section2 .programs-offered ul li,
-    #section2 .scholarships ul li,
-    #section2 .research-areas ul li,
-    #section2 .research-at-vit-ap ul li {
-      font-size: 14px;
-    }
-  }
-  
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url("../assets/about1.png");
+  background-size: auto;
+  padding: 15px;
+}
+.about-us {
+  text-align: justify;
+  border: 0px solid;
+  position: relative;
+  /* box-shadow: 0px 0px 14px 0px #ffffff00; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  background-color: #ffffffe6;
+  background-size: cover;
+}
+
+.about-tedx {
+  padding-top: 20px;
+}
+.about-tedxmitsg {
+  padding-top: 20px;
+}
+.sata {
+  width: 100%;
+  top: 35px;
+  left: 10px;
+}
+.sata img {
+  height: auto;
+  width: 100%;
+}
+
+.line-breaker {
+  height: 400px;
+  overflow: hidden;
+}
+.line-breaker img {
+  height: auto;
+  width: 100%;
+}
+#section3 {
+  padding-bottom: 15px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/tedx.png");
+  background-size: cover;
+  height: auto;
+  background-color: black;
+}
+hr.style13 {
+  height: 9px;
+  border: 0;
+  box-shadow: -3px 4px 3px 4px #ff0000 inset;
+}
+.pastevents {
+  margin: auto;
+  width: 57%;
+  background-size: cover;
+}
+.carousel {
+  width: 100% !important;
+}
+.carouseltedx {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+hr.style2 {
+  border-top: 3px double #ffffff;
+}
+hr.style3 {
+  width: 80%;
+  border-top: 3px double #000f;
+}
 /* General styles for the speakers section */
 #speakers {
   /* padding: 40px 0; Increased padding for better spacing */
@@ -1041,7 +903,7 @@ button:focus {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(237, 201, 201, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -1099,135 +961,105 @@ button:focus {
   width: 100%;
   height: auto;
   background: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
-
-/* Contact Section */
-.contactcontent {
-  text-align: left;
-  flex-basis: 100%; /* Take full width on smaller screens */
-}
-
-.contactcontenttext {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 10px;
-}
-
-.contactnumber,
-.contactmail {
-  padding-left: 30px; /* Adjust padding for the icons */
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position-y: center;
-}
-
-.contactnumber {
-  background-image: url(../assets/telephone.png);
-}
-
-.contactmail {
-  background-image: url(../assets/envelope.png);
-}
-
-/* Social Media */
-.socialmedia {
-  text-align: left;
-}
-
-.socialmediaico img {
-  width: 32px;
-  margin-left: 10px;
-}
-
-/* Logo Section */
 .footerlogo {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footerlogo img {
   width: 50%;
 }
-
-/* Button */
-.btnticketsbottom {
-  background: white;
-  padding: 10px 30px;
-  border-radius: 28px;
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 10px;
+.footerlogo img {
+  width: 100%;
 }
-
-.btnticketsbottom:hover {
-  color: black;
-  text-decoration: none;
+.footerlogo1 {
+  width: 50%;
 }
-
-/* Footer */
+.picsart-logo img {
+  width: 50%;
+}
+.socialmedia img {
+  margin-left: 10px;
+}
+.linkedinred img {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  margin-right: 24%;
+  top: 0;
+}
+.shape {
+  position: absolute;
+  left: 15%;
+  bottom: -65px;
+}
+.shape img {
+  width: 26%;
+}
 footer {
   background-color: #222222;
 }
-
 footer a {
   color: red;
 }
-
 footer a:hover {
   color: red;
   text-decoration: none;
 }
-
-/* Media Queries for Responsive Design */
-
-/* For tablets (768px and below) */
-@media (max-width: 768px) {
-  #contactus {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contactcontent, .socialmedia, .footerlogo {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .btnticketsbottom {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
-
-  .socialmediaico img {
-    width: 28px;
-  }
+.btntickets {
+  background: white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 28px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
 }
-
-/* For mobile phones (576px and below) */
-@media (max-width: 576px) {
-  .contactnumber,
-  .contactmail {
-    padding-left: 20px;
-    background-size: 18px;
-  }
-
-  .socialmediaico img {
-    width: 24px;
-  }
-
-  .footerlogo img {
-    width: 70%;
-  }
-
-  .btnticketsbottom {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
+.btntickets:hover {
+  color: black;
+  text-decoration: none;
+}
+.btnticketsbottom {
+  background: white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 28px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.btnticketsbottom1 {
+  background: #e62b1e;
+  padding: 10px 30px 10px 30px;
+  border-radius: 28px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.btnticketsbottom1:hover {
+  color: black;
+  text-decoration: none;
+}
+.btnticketsbottom:hover {
+  color: black;
+  text-decoration: none;
+}
+.buyticketsbottom {
+  text-align: left;
+  padding-top: 10%;
+  width: 100%;
+}
+.buyticketsbottom1 {
+  text-align: center;
+  width: 100%;
+}
+.pasteventtext {
+  text-align: justify;
+}
+.text-justify {
+  text-align: justify;
+}
+.colon {
+  color: white;
+  font-size: 32px;
+  padding-top: 0.5rem;
 }
 
 .teamprofile {
@@ -1261,9 +1093,97 @@ footer a:hover {
   font-weight: 400;
 }
 #ourteam {
-  padding: 30px;
+  
   height: auto;
 }
+/* Styling for Core Team and Organizing Secretaries */
+.coreteam .row, .organizing-secretaries .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.coreteam .teamprofiletxt h1, 
+.organizing-secretaries .teamprofiletxt h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.coreteam .teamprofile, 
+.organizing-secretaries .teamprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.coreteam, .organizing-secretaries {
+  padding: 20px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.ourteamtitle {
+  margin: 30px 0;
+}
+
+.ourteamtitle .fs-20 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Removing the extra spacing around the list */
+.team-list {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.team-list li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.team-container {
+  display: flex;
+  justify-content: space-around; /* Space between the two sections */
+  gap: 40px; /* Adjust space between columns */
+}
+
+.organizing-secretaries, .local-organizing-committee {
+  flex: 1; /* Ensures both sections take equal width */
+  max-width: 50%; /* Prevents the sections from being too wide */
+}
+
+.organizing-secretaries .row, 
+.local-organizing-committee .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.team-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.team-list li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
 .speakerprofilepage {
   background-color: black;
 }
@@ -1294,33 +1214,6 @@ footer a:hover {
   box-sizing: border-box;
   max-width: 100%;
 }
-.section {
-  padding: 60px 0;
-}
-.inner-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-.our-story p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
-.watch-video {
-  margin-top: 20px;
-  font-size: 1rem;
-}
-.about-img img {
-  width: 100%; /* Adjust to 100% or any other value as needed */
-  max-width: 600px; /* Set a maximum width if needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-}
-#about-campus, #about-chemistry {
-  padding: 40px 0;
-}
-
 
 @media only screen and (max-width: 768px) {
   .navbar-brand img {
@@ -1501,7 +1394,7 @@ footer a:hover {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: black;
     margin: 0;
   }
   .navbar-brand {
@@ -1582,92 +1475,137 @@ footer a:hover {
     }
   }
 }
+
+
+
+
+
+
+
+#about-campus{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 100%; 
+  padding: 15px 20px; 
+  column-gap: 15px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.about-text{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.about-img{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.img-clg{
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+}
+
+
+
+.department-chemistry {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: rgb(145, 34, 34);
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.department-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #222; /* Darker text color for paragraphs */
+  font-weight: 400; /* Slightly bolder font weight */
+}
+
+.program-list,
+.scholarship-list,
+.innovation-list,
+.research-features {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  color: #222;
+  font-size: 15px; /* Darker text color for list items */
+}
+
+.program-list li,
+.scholarship-list li,
+.research-features li {
+  margin-bottom: 0.5rem;
+}
+
+.innovation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.research-table th,
+.research-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+   /* Darker text color for table content */
+}
+
+.research-table thead {
+  background-color: #690101;
+  color: white;
+}
+
+.research-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 @media (max-width: 768px) {
-  .contactcontent, .socialmedia {
-    margin-right: 0;
-    text-align: center;
+  .department-chemistry {
+    padding: 1rem;
   }
 
-  .footerlogo img {
-    width: 80%; /* Reduce logo size */
-    margin: 0 auto;
+  .section-title {
+    font-size: 2rem;
   }
 
-  .btntickets,
-  .btnticketsbottom,
-  .btnticketsbottom1 {
-    font-size: 16px;
-    padding: 8px 20px;
+  .subsection-title {
+    font-size: 1.25rem;
   }
 
-  .buyticketsbottom {
-    padding-top: 5%;
-    text-align: center;
+  .innovation-list {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .linkedinred img {
-    margin-right: 0;
-  }
-
-  .shape img {
-    width: 40%; /* Adjust shape size */
-  }
-
-  .contactnumber,
-  .contactmail {
-    padding-left: 10%; /* Adjust padding for smaller screens */
-    background-size: 18px;
-  }
-
-  .colon {
-    font-size: 28px;
-  }
-}
-
-/* For devices with width of 576px or less (mobile phones) */
-@media (max-width: 576px) {
-  .contactcontent, .socialmedia {
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .footerlogo img {
-    width: 70%; /* Further reduce logo size for mobile */
-  }
-
-  .btntickets,
-  .btnticketsbottom,
-  .btnticketsbottom1 {
-    font-size: 14px;
-    padding: 6px 15px;
-  }
-
-  .buyticketsbottom {
-    padding-top: 15px;
-  }
-
-  .contactnumber,
-  .contactmail {
-    padding-left: 8%;
-    background-size: 16px;
-  }
-
-  .linkedinred img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .shape img {
-    width: 50%;
-  }
-
-  .colon {
-    font-size: 24px;
-  }
-
-  .text-justify,
-  .pasteventtext {
-    text-align: left; /* Better readability on small screens */
-  }
-}
-
+} 
