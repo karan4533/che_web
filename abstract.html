@@ -91,21 +91,14 @@
     </style>
   </head>
   <body>
-    <!-- <div class="se-pre-con"></div>
-      <div class="drawing" id="loading">
-        <div class="loading-dot"></div>
-      </div>
-    </div>
-    <script>
-      AOS.init();
-    </script> -->
+    
 
     <div id="main">
       <video autoplay muted loop class="background-video">
         <source src="assets/intro_c60395eb0f.mp4" type="video/mp4" />
       </video>
 
-      <!-- <div id="particles-js"></div> -->
+      <div id="particles-js"></div>
 
       <!-- Your existing HTML content -->
       <header>
@@ -134,7 +127,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#" >About</a>
                   <ul class="submenu">
-                    <a class="nav-link" href="about.html">VIT-AP</a>
+                    <a class="nav-link" href="about1.html">VIT-AP</a>
                     <a class="nav-link" href="index.html#section2">Department</a>
                     <a class="nav-link" href="index.html#conference">Conference</a>
                     
@@ -144,6 +137,8 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#" >Submission</a>
                   <ul class="submenu">
+                    <a class="nav-link" href="assets/SuWatE Poster_Final (1).pdf" target="_blank">Poster
+                    </a>
                     <a class="nav-link" href="assets/SuWatE'24_Final.pdf" target="_blank">Brochure
                     </a>
                     <a class="nav-link" href="#">Abstract</a>
@@ -151,7 +146,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#speakers">Speakers</a>
+                  <a class="nav-link" href="speakers.html">Speakers</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#">Committee</a>
@@ -161,7 +156,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sponsors</a>
+                  <a class="nav-link" href="sponsor.html">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactus">Contact</a>
                 </li>
               </ul>
             </div>
@@ -210,13 +208,13 @@
         <div class="btn-container">
           <!-- First row buttons -->
           <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
-            <a href="https://shorturl.at/y2l3T" class="btnticketsbottom1"
-              >Register Now</a
+            <a href="assets/SuWatE'24 Abstract-Template.pdf" target="_blank" class="btnticketsbottom1"
+              >Abstract Template</a
             >
           </div>
           <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
-            <a href="https://shorturl.at/y2l3T" class="btnticketsbottom1"
-              >Register Now</a
+            <a href="assets/SuWate'24_Model_Poster[1].pdf" target="_blank" class="btnticketsbottom1"
+              >Poster Template</a
             >
           </div>
         </div>
@@ -227,85 +225,160 @@
 
   
           <!-- Second row buttons -->
+          
           <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
-            <a href="https://shorturl.at/y2l3T" class="btnticketsbottom1"
-              >Register Now</a
-            >
-          </div>
-          <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
-            <a href="https://shorturl.at/y2l3T" class="btnticketsbottom1"
-              >Register Now</a
+            <a href="https://cmt3.research.microsoft.com/SuWatE2024/" target="_blank" class="btnticketsbottom1"
+              >Submit Now</a
             >
           </div>
         </div>
       </div>
+
+
+      <h1 class="text-black section2title ff-mont pt-2 fs-40 fw-600">
+        Remaining<span class="text-base-color"> Days</span>
+      </h1>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-timer">
+        <div class="days">
+          <span class="value" id="days">00</span><br />
+          <span class="label">DAYS</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="hours">
+          <span class="value" id="hours">00</span><br />
+          <span class="label">HOURS</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="minutes">
+          <span class="value" id="minutes">00</span><br />
+          <span class="label">MINS</span>
+        </div>
+        <span class="colon">:</span>
+        <div class="seconds">
+          <span class="value" id="seconds">00</span><br />
+          <span class="label">SEC</span>
+        </div>
+      </div>
+
+      <script>
+        // Set the target date and time for the countdown (19th December 2024 at 10:00 AM)
+        const targetDate = new Date(
+          "December 19, 2024 10:00:00"
+        ).getTime();
+
+        // Function to update the countdown timer
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const timeDifference = targetDate - now;
+
+          // Calculate days, hours, minutes, and seconds
+          const days = Math.floor(
+            timeDifference / (1000 * 60 * 60 * 24)
+          );
+          const hours = Math.floor(
+            (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor(
+            (timeDifference % (1000 * 60)) / 1000
+          );
+
+          // Update the HTML elements with the calculated values
+          document.getElementById("days").innerText = days;
+          document.getElementById("hours").innerText = hours;
+          document.getElementById("minutes").innerText = minutes;
+          document.getElementById("seconds").innerText = seconds;
+
+          // Stop the countdown when the target date is reached
+          if (timeDifference < 0) {
+            clearInterval(timerInterval);
+            document.querySelector(".countdown-timer").innerHTML =
+              "<h2>Event Started</h2>";
+          }
+        }
+
+        // Update the countdown every second
+        const timerInterval = setInterval(updateCountdown, 1000);
+      </script>
+
       </div>
 
       
-    <div id="contactus">
-      <div class="container-fluid">
-        <div class="row footer-contactUs">
-          <div class="col-md-4">
-            <div class="buyticketsbottom">
-              <a href="https://shorturl.at/y2l3T" class="btnticketsbottom"
-                >Register Now</a
-              >
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contactcontent text-left">
-              <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
-              <div class="contactcontenttext text-left">
-                
-                <p class="fs-18 text-white fw-400 contactnumber">
-                  +919944498483
-                </p>
-                <p class="fs-18 text-white fw-400 contactmail">
-                  muthuprabhu.s@vitap.ac.in
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="socialmedia text-left">
-              <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
-              <div class="socialmediaico">
-                <a
-                  href="https://www.facebook.com/vitap.university/"
-                  target="_blank"
-                  ><img src="assets/facebook.png"
-                /></a>
-                <a
-                  href="https://www.instagram.com/vitap.university/?hl=en"
-                  target="_blank"
-                  ><img src="assets/instagram.png"
-                /></a>
-                <a
-                  href="https://www.linkedin.com/school/vitap-university/posts/?feedView=all"
-                  target="_blank"
+      <div id="contactus">
+        <div class="container-fluid">
+          <div class="row footer-contactUs">
+            <div class="col-md-4">
+              <div class="buyticketsbottom">
+                <a href="https://shorturl.at/y2l3T" class="btnticketsbottom"
+                  >Register Now</a
                 >
-                  <img src="assets/linkedin.png" />
-                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contactcontent text-left">
+                <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
+                <div class="contactcontenttext text-left">
+                  
+                  <p class="fs-18 text-white fw-400 contactnumber">
+                    +91 9944498483
+                  </p>
+                  <p class="fs-18 text-white fw-400 contactnumber">
+                    +91 7807156581
+                  </p>
+                  <p class="fs-18 text-white fw-400 contactnumber">
+                    +91 9573432526
+                  </p>
+  
+                  <p class="fs-18 text-white fw-400 contactmail" style="margin-top: 13px;">
+                    suwate@vitap.ac.in
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="socialmedia text-left">
+                <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
+                <div class="socialmediaico">
+                  <a
+                    href="https://www.facebook.com/vitap.university/"
+                    target="_blank"
+                    ><img src="assets/facebook.png"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/vitap.university/?hl=en"
+                    target="_blank"
+                    ><img src="assets/instagram.png"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/school/vitap-university/posts/?feedView=all"
+                    target="_blank"
+                  >
+                    <img src="assets/linkedin.png" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="footerlogo">
-            <img src="assets/white_logo.png" />
+  
+          <div class="col-md-3">
+            <div class="footerlogo">
+              <img src="assets/white_logo.png" />
+            </div>
           </div>
+  
+          <!--- <div class="col-md-3"></div>
+        <div class="footerlogo1 picsart-logo">
+          <img src="assets/Picsart.png" alt="Picsart Logo">
         </div>
-
-        <!--- <div class="col-md-3"></div>
-      <div class="footerlogo1 picsart-logo">
-        <img src="assets/Picsart.png" alt="Picsart Logo">
+  
+      </div>-->
+        </div>
+        <!-- </div> -->
       </div>
-
-    </div>-->
-      </div>
-      <!-- </div> -->
-    </div>
     <footer class="text-center footer">
       <p class="text-white fw-100 fs-13 m-0">
         &#169; Vellore Institue of Technology,Andhara Pradesh
@@ -316,6 +389,62 @@
       </p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+    <script type="text/javascript">
+      var modal = document.getElementById("myModal");
 
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script language="javascript" type="text/javascript">
+      $(window).on("load", function () {
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5WSFHVTP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/countdown1.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

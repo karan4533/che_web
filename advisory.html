@@ -56,12 +56,10 @@
 
       /* Committee Section Styles */
       #committeeSection {
-        
+        margin: auto;
         width: 80%;
         background-color: #ffffff;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        
         padding: 15px;
       }
 
@@ -102,6 +100,41 @@
         line-height: 1.6;
         color: #333;
       }
+      .class-k{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+      }
+      .national-advisors{
+        flex : 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+      }
+      .international-advisors{
+        flex:1;
+        display: flex;
+        column-gap: 10px;
+        flex-direction: column;
+        margin-right: 10px;
+      }
+      .team-list1 li, .team-list li{
+        
+        border-bottom: 1px solid #dfdfdf;
+        margin: 2px;
+        padding: 3px;
+        list-style-type: none;
+      }
+      /* Centering the titles and lists */
+         .chief-patrons, .principal-patrons, .chairpersons, .co-chairs {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the title and list */
+            margin-bottom: 20px; /* Add space between sections */
+        }
+
+
 
       /* Responsive Design */
       @media (max-width: 768px) {
@@ -139,11 +172,19 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- <div class="se-pre-con">
+        <div class="drawing" id="loading">
+          <div class="loading-dot"></div>
+        </div>
+    </div> -->
+
+    
+
     <div id="main">
         <video autoplay muted loop class="background-video">
             <source src="assets/intro_c60395eb0f.mp4" type="video/mp4" />
         </video>
-
+        <div id="particles-js"></div>
         <header>
             <nav class="navbar navbar-expand-lg py-2 navbar-dark bg-trans sticky-top" style="margin-top: 0px" id="nav">
                 <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -159,9 +200,9 @@
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="about.html" >About</a>
+                                <a class="nav-link" href="#" >About</a>
                                 <ul class="submenu">
-                                    <a class="nav-link" href="about.html">VIT-AP</a>
+                                    <a class="nav-link" href="about1.html">VIT-AP</a>
                                     <a class="nav-link" href="index.html#department">Department</a>
                                     <a class="nav-link" href="index.html#conference">Conference</a>
                                 </ul>
@@ -169,13 +210,15 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" >Submission</a>
                                 <ul class="submenu">
+                                    <a class="nav-link" href="assets/SuWatE Poster_Final (1).pdf" target="_blank">Poster
+                                    </a>
                                     <a class="nav-link" href="assets/SuWatE'24_Final.pdf" target="_blank">Brochure</a>
                                     <a class="nav-link" href="abstract.html">Abstract</a>
                                     <a class="nav-link" href="https://shorturl.at/y2l3T" target="_blank" >Registration</a>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#speakers">Speakers</a>
+                                <a class="nav-link" href="speakers.html">Speakers</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Committee</a>
@@ -185,7 +228,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sponsors</a>
+                                <a class="nav-link" href="sponsor.html">Sponsors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactus">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -216,88 +262,169 @@
         </div>
     </div>
 
-    <center>
-    <div id="committeeSection">
-      <div class="advisory-committee">
-          <h2 class="subheading">Advisory <span class="com">Committee</span></h2>
-          
-          <div class="international-advisors">
-              <h3 class="inner-heading">International Advisors</h3>
-              <ul>
-                  <li>• Prof Yuichi Negishi - Tohoku University, Japan</li>
-                  <li>• Prof Keiko Sasaki - Waseda University, Japan</li>
-                  <li>• Prof Sankara Gayatri Radhakrishnan - University of Pretoria, South Africa</li>
-                  <li>• Prof Chang Min Park – Kyungpook National University, South Korea</li>
-                  <li>• Prof Byong-Hun Jeon - Hanyang University, South Korea</li>
-                  <li>• Prof K Prabhakar - Busan National University, South Korea</li>
-                  <li>• Prof Yanna Liang - University at Albany, USA</li>
-                  <li>• Prof Bruno F Urbano - University of Concepcion, Chile</li>
-                  <li>• Prof S Shanmugam – DGIST, South Korea</li>
-              </ul>
-          </div>
-          
-          <div class="national-advisors">
-              <h3 class="inner-heading">National Advisors</h3>
-              <ul>
-                  <li>• Prof. Archita Patnaik - IISER Parumpur</li>
-                  <li>• Dr. V. R. K. Murthy – VIT-AP University, India</li>
-                  <li>• Prof L Giribabu - IICT Hyderabad</li>
-                  <li>• Prof E Murugan – University of Madras, India</li>
-                  <li>• Prof E Balaraman - IISER Tripathy</li>
-                  <li>• Prof KP Elango - Gandhigram Rural Institute</li>
-                  <li>• Dr A Nirmala Grace – Vellore Institute of Technology, India</li>
-                  <li>• Prof M Sankaralingam – NIT Calicut</li>
-                  <li>• Prof Renga Rao - IIT Madras</li>
-                  <li>• Prof Raghumani S Ningthoujam - BARC Mumbai</li>
-                  <li>• Dr K Senthil – VIT AP University, India</li>
-                  <li>• Dr G Viswanathan – Anna University Dindigul, India</li>
-                  <li>• Dr Santanu Mandal - VIT AP University, India</li>
-              </ul>
-          </div>
-      </div>
-  </div>
-</center>
+    
+        <div id="committeeSection">
+            <div class="advisory-committee">
+                <h2 class="fs-24 fw-800 text-center mt-4 mb-4">Advisory <span class="com">Committee</span></h2>
+                <div class="class-k">
+                    <div class="international-advisors">
+                        <h3 class="fs-20 fw-700 text-center mt-3 mb-3">International Advisors</h3>
+                        <ul class="team-list1">
+                            <li class="fs-16 fw-600"> Prof Yuichi Negishi - Tohoku University, Japan</li>
+                            <li class="fs-16 fw-600"> Prof Keiko Sasaki - Waseda University, Japan</li>
+                            <li class="fs-16 fw-600"> Prof R Sankara Gayatri  - University of Pretoria, South Africa</li>
+                            <li class="fs-16 fw-600"> Prof C M Park – Kyungpook National University, South Korea</li>
+                            <li class="fs-16 fw-600"> Prof Byong-Hun Jeon - Hanyang University, South Korea</li>
+                            <li class="fs-16 fw-600"> Prof K Prabhakar - Busan National University, South Korea</li>
+                            <li class="fs-16 fw-600"> Prof Yanna Liang - University at Albany, USA</li>
+                            <li class="fs-16 fw-600"> Prof Bruno F Urbano - University of Concepcion, Chile</li>
+                            <li class="fs-16 fw-600"> Prof S Shanmugam – DGIST, South Korea</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="national-advisors">
+                        <h3 class="fs-20 fw-700 text-center mt-3 mb-3">National Advisors</h3>
+                        <ul class="team-list1">
+                            <li class="fs-16 fw-600"> Prof Archita Patnaik - IISER Berhampur</li>
+                            <li class="fs-16 fw-600"> Prof V. R. K. Murthy – VIT AP University, India</li>
+                            <li class="fs-16 fw-600"> Prof L Giribabu - IICT Hyderabad</li>
+                            <li class="fs-16 fw-600"> Prof E Murugan – University of Madras, India</li>
+                            <li class="fs-16 fw-600"> Prof E Balaraman - IISER Tirupati</li>
+                            <li class="fs-16 fw-600"> Prof KP Elango - Gandhigram Rural Institute</li>
+                            <li class="fs-16 fw-600"> Prof A Nirmala Grace – Vellore Institute of Technology, India</li>
+                            <li class="fs-16 fw-600"> Prof M Sankaralingam – NIT Calicut</li>
+                            <li class="fs-16 fw-600"> Prof Renga Rao - IIT Madras</li>
+                            <li class="fs-16 fw-600"> Prof Raghumani S Ningthoujam - BARC Mumbai</li>
+                            <li class="fs-16 fw-600"> Prof K Senthil – VIT AP University, India</li>
+                            <li class="fs-16 fw-600"> Prof N Viswanathan – Anna University Dindigul, India</li>
+                            <li class="fs-16 fw-600"> Prof Santanu Mandal - VIT AP University, India</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                 
+                <div class="chief-patrons">
+                    <h3 class="fs-20 fw-700  mt-3 mb-3">Chief Patron</h3>
+
+                    <ul class="team-list ">
+                        <li class="fs-16 fw-600"> Dr. G. Viswanathan - Chancellor, Vellore Institute of Technology (VIT)</li>
+                        <li class="fs-16 fw-600"> Shri Shankar Viswanathan - Vice President, VIT-AP University</li>
+                        <li class="fs-16 fw-600"> Dr. Sekar Viswanathan - Vice President, VIT-AP University</li>
+                        <li class="fs-16 fw-600"> Dr. G. V. Selvam - Vice President, VIT-AP University</li>
+                    </ul>
+                </div>
+                
+                <div class="principal-patrons">
+                    <h3 class="fs-20 fw-700 mt-3 mb-3">Principal Patrons</h3>
+
+                    <ul class="team-list">
+                        <li class="fs-16 fw-600"> Dr. S. V. Kota Reddy - Vice-Chancellor, VIT-AP University</li>
+                        <li class="fs-16 fw-600"> Dr. Jagadish C. Mudiganti - Registrar, VIT-AP University</li>
+                    </ul>
+                </div>
+                
+                <div class="chairpersons">
+                    <h3 class="fs-20 fw-700  mt-3 mb-3">Chair Persons</h3>
+                    
+                    <ul class="team-list r">
+                        <li class="fs-16 fw-600"> Prof S Srinivas - Dean SAS, VIT-AP University, India</li>
+                        <li class="fs-16 fw-600"> Prof Byong-Hun Jeon - Hanyang University, South Korea</li>
+                        <li class="fs-16 fw-600"> Prof Giehyeon Lee - Yonsei University, South Korea</li>
+                        <li class="fs-16 fw-600"> Prof Yuichi Negishi - Tohoku University, Japan</li>
+                    </ul>
+                </div>
+                
+                <div class="co-chairs">
+                    <h3 class="fs-20 fw-700  mt-3 mb-3">Co-chairs</h3>
+                    <ul class="team-list ">
+                        
+                        <li class="fs-16 fw-600"> Dr. M. Venkata Rajanikanth - Associate Dean, SAS, VIT-AP</li>
+                        <li class="fs-16 fw-600"> Dr. Nagarjuna Neella - HoD Physics, VIT-AP</li>
+                    </ul>
+                </div>
+            
+            </div>
+        </div>
+    
+    
   
   
 
 
     
 
-    <div id="contactus">
-        <div class="container-fluid">
-            <div class="row footer-contactUs">
+        <div id="contactus">
+            <div class="container-fluid">
+              <div class="row footer-contactUs">
                 <div class="col-md-4">
-                    <div class="buyticketsbottom">
-                        <a href="https://shorturl.at/y2l3T" class="btnticketsbottom">Register Now</a>
-                    </div>
+                  <div class="buyticketsbottom">
+                    <a href="https://shorturl.at/y2l3T" class="btnticketsbottom"
+                      >Register Now</a
+                    >
+                  </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="contactcontent text-left">
-                        <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
-                        <div class="contactcontenttext text-left">
-                            <p class="fs-18 text-white fw-400 contactnumber">+919944498483</p>
-                            <p class="fs-18 text-white fw-400 contactmail">muthuprabhu.s@vitap.ac.in</p>
-                        </div>
+                  <div class="contactcontent text-left">
+                    <h1 class="fs-19 text-base-color p-2 fw-400">Contact Us</h1>
+                    <div class="contactcontenttext text-left">
+                      
+                      <p class="fs-18 text-white fw-400 contactnumber">
+                        +91 9944498483
+                      </p>
+                      <p class="fs-18 text-white fw-400 contactnumber">
+                        +91 7807156581
+                      </p>
+                      <p class="fs-18 text-white fw-400 contactnumber">
+                        +91 9573432526
+                      </p>
+      
+                      <p class="fs-18 text-white fw-400 contactmail" style="margin-top: 13px;">
+                        suwate@vitap.ac.in
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="socialmedia text-left">
-                        <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
-                        <div class="socialmediaico">
-                            <a href="https://www.facebook.com/vitap.university/" target="_blank"><img src="assets/facebook.png" /></a>
-                            <a href="https://www.instagram.com/vitap.university/?hl=en" target="_blank"><img src="assets/instagram.png" /></a>
-                            <a href="https://www.linkedin.com/school/vitap-university/posts/?feedView=all" target="_blank"><img src="assets/linkedin.png" /></a>
-                        </div>
+                  <div class="socialmedia text-left">
+                    <h1 class="fs-19 text-white p-2 fw-400">Connect With Us</h1>
+                    <div class="socialmediaico">
+                      <a
+                        href="https://www.facebook.com/vitap.university/"
+                        target="_blank"
+                        ><img src="assets/facebook.png"
+                      /></a>
+                      <a
+                        href="https://www.instagram.com/vitap.university/?hl=en"
+                        target="_blank"
+                        ><img src="assets/instagram.png"
+                      /></a>
+                      <a
+                        href="https://www.linkedin.com/school/vitap-university/posts/?feedView=all"
+                        target="_blank"
+                      >
+                        <img src="assets/linkedin.png" />
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+              </div>
+      
+              <div class="col-md-3">
                 <div class="footerlogo">
-                    <img src="assets/white_logo.png" />
+                  <img src="assets/white_logo.png" />
                 </div>
+              </div>
+      
+              <!--- <div class="col-md-3"></div>
+            <div class="footerlogo1 picsart-logo">
+              <img src="assets/Picsart.png" alt="Picsart Logo">
             </div>
-        </div>
-    </div>
+      
+          </div>-->
+            </div>
+            <!-- </div> -->
+          </div>
 
     <footer class="text-center footer">
         <p class="text-white fw-100 fs-13 m-0">&#169; Vellore Institute of Technology, Andhra Pradesh</p>
@@ -306,5 +433,63 @@
             <a href="index.html" target="_blank"><b>Digi Byte</b></a>
         </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+    <script type="text/javascript">
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script language="javascript" type="text/javascript">
+      $(window).on("load", function () {
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5WSFHVTP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/countdown1.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
