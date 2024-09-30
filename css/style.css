@@ -1159,7 +1159,7 @@ footer a:hover {
 
 .organizing-secretaries, .local-organizing-committee {
   flex: 1; /* Ensures both sections take equal width */
-  max-width: 50%; /* Prevents the sections from being too wide */
+  width: 50%; /* Prevents the sections from being too wide */
 }
 
 .organizing-secretaries .row, 
@@ -1258,7 +1258,7 @@ footer a:hover {
     background-repeat: no-repeat;
     height: 100vh;
     padding-top: 60px;
-    height: 112vh;
+    height: 210vh;
   }
   .tedxspeaker {
     padding: 5px;
@@ -1476,4 +1476,28 @@ footer a:hover {
       background-color: #555;
     }
   }
+  .image-container{
+
+    display: none;
+  }
+  .team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .local-organizing-committee {
+    width: 90%;
+  }
+  .organizing-secretaries{
+    width: 100%;
+  }
+  .organizing-secretaries .row, 
+  .local-organizing-committee .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 }
