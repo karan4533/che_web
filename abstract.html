@@ -87,6 +87,32 @@
         color: #fff;
         text-decoration: none;
       }
+      .scrolling-text-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    }
+
+    .scrolling-text {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scrollText 30s linear infinite;
+        font-size: 20px;
+        color: #333;
+    }
+
+    @keyframes scrollText {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
     
     </style>
   </head>
@@ -228,7 +254,7 @@
           
           <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
             <a href="https://cmt3.research.microsoft.com/SuWatE2024/" target="_blank" class="btnticketsbottom1"
-              >Submit Now</a
+              >Abstract Submit Now</a
             >
           </div>
           <div class="buyticketsbottom1 ff-mont pt-2 fs-40 fw-600">
@@ -246,6 +272,11 @@
         >*Before making a payment, ensure that you have submitted your abstract</strong
       >
     </p>
+    <div class="scrolling-text-container">
+      <div class="scrolling-text">
+          Conference papers will be published in Scopus indexed journals based on their quality and scope. Selected papers will be published as book chapters.
+      </div>
+    </div>
 
 
       <h1 class="text-black section2title ff-mont pt-2 fs-40 fw-600">
